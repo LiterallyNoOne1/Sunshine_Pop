@@ -1,11 +1,11 @@
 {
     "versions": [
         {
-            "package_version": "0.4.0",
-            "download_url": "https://github.com/UmedMuzl/Sunshine_Pop/archive/refs/tags/v0.4.0.zip",
-            "sha256": "94b3d40dc8f2b34fd551fd0ddd645affde1a05a1e85625e253b5ad067d4b140f",
+            "package_version": "0.4.1",
+            "download_url": "https://github.com/UmedMuzl/Sunshine_Pop/archive/refs/tags/v0.4.1.zip",
+            "sha256": "4cf8aaa2667cc12df970cfde3e786e370129fd783da307135e266f5b9b881561",
             "changelog": [
-                "SMS PopTracker update to 0.4.0 to catch up to 0.5.3AP logic",
+                "SMS PopTracker update to 0.4.1 to catch up to 0.5.3AP logic",
                 "Fixed autotracking (had to remap the IDs due to a APworld Logic Change)",
                 "Added Nozzle Box Checks to the Tracker",
                 "Updated shine visibility and logic, this means fluddless start now shows the proper checks.",
