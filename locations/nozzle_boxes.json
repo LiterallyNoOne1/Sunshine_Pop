@@ -309,7 +309,7 @@
                         "sections": [
                             {
                                 "name": "Rocket Box (Ricco)",
-                                "access_rules": [ "$ricco3, $hover", "$rocket"],
+                                "access_rules": ["$rocket"],
                                 "visibility_rules": [ "episode3", "allepisodes" ],
                                 "item_count": 1
                             }
@@ -334,9 +334,8 @@
                         "sections": [
                             {
                                 "name": "Rocket Box (Gelato)",
-                                "access_rules": [
-                                    "$gelato5, $splasher",
-                                    "$gelato5, $rocket"
+                                "access_rules": [ 
+                                    "$rocket"
                                 ],
                                 "visibility_rules": [ "episode5", "episode6", "episode7", "episode8", "allepisodes" ],
                                 "item_count": 1
@@ -363,7 +362,7 @@
                         "sections": [
                             {
                                 "name": "Rocket Box (Noki)",
-                                "access_rules": [ "$height" ],
+                                "access_rules": [ "$rocket" ],
                                 "visibility_rules": [ "allepisodes" ],
                                 "item_count": 1
                             }
@@ -393,7 +392,7 @@
                         "sections": [
                             {
                                 "name": "Rocket Box (Pianta)",
-                                "access_rules": [ "$pianta8", "$splasher", "$rocket"],
+                                "access_rules": ["$spray, $yoshi, $rocket"],
                                 "visibility_rules": [ "episode8", "allepisodes" ],
                                 "item_count": 1
                             }
@@ -418,7 +417,7 @@
                         "sections": [
                             {
                                 "name": "Rocket Box (Corona)",
-                                "access_rules": [ "$rocket" ],
+                                "access_rules": [ "$spray, $hover, $rocket" ],
                                 "item_count": 1
                             }
                         ],
@@ -509,7 +508,7 @@
                         "sections": [
                             {
                                 "name": "Turbo Box (Ricco)",
-                                "access_rules": [ "$ricco8", "$turbo" ],
+                                "access_rules": [ "$turbo" ],
                                 "visibility_rules": [ "episode8", "allepisodes" ],
                                 "item_count": 1
                             }
@@ -534,7 +533,7 @@
                         "sections": [
                             {
                                 "name": "Turbo Box (Gelato)",
-                                "access_rules": [ "$gelato4", "$turbo" ],
+                                "access_rules": [ "$turbo" ],
                                 "visibility_rules": [ "episode4", "allepisodes" ],
                                 "item_count": 1
                             }
@@ -560,7 +559,7 @@
                         "sections": [
                             {
                                 "name": "Turbo Box (Noki)",
-                                "access_rules": [ "$noki6, $hover", "$turbo"],
+                                "access_rules": [ "$hover, $turbo"],
                                 "visibility_rules": [ "episode6", "episode7", "episode8", "allepisodes" ],
                                 "item_count": 1
                             },
