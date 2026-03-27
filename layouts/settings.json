@@ -7,12 +7,11 @@
             {
                 "type": "itemgrid",
                 "item_size": 60,
-                "item_margin": "2, 2",
+                "item_margin": "1.5, 1.5",
                 "h_alignment": "center",
                 "rows": [
-                    ["progression", "coin_shines_enabled", "blues"],
-                    ["coronashines", "boat_maximum"],
-                    ["nozzlestart", "yoshistart", "DisplayLogic"],
+                    ["progression", "coin_shines_enabled", "blues", "nozzlestart"],
+                    ["coronashines", "boat_maximum", "DisplayLogic"],
                     ["automap"]
                 ]
             }
