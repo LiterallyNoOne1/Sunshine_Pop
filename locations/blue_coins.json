@@ -5459,7 +5459,7 @@
       {
         "name": "Trade 10 Blue Coins",
         "access_rules": [
-          "$isRiccoEnterable"
+          "$isBoatHouseEnterable"
         ],
         "sections": [
           {
