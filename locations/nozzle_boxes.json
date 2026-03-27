@@ -218,7 +218,7 @@
                             {
                                 "name": "Hover Box On The Cloud (Pianta)",
                                 "access_rules": [ "false" ],
-                                "visibility_rules": [ "false" , "episode8", "allepisodes" ],
+                                "visibility_rules": [ "false, episode8, allepisodes" ],
                                 "item_count": 1
                             }
                         ],
@@ -284,7 +284,11 @@
                         "sections": [
                             {
                                 "name": "Rocket Box (Bianco)",
-                                "access_rules": [ "$bianco4", "$rocket" ],
+                                "access_rules": [
+                                    "$Bianco4",
+                                    "OoLMovement, ^$canReachWithSpray",
+                                    "OoLMovement, ^$canReachWithTurbo"
+                                ],
                                 "visibility_rules": [ "episode4", "allepisodes" ],
                                 "item_count": 1
                             }
@@ -309,7 +313,11 @@
                         "sections": [
                             {
                                 "name": "Rocket Box (Ricco)",
-                                "access_rules": ["$rocket"],
+                                "access_rules": [
+                                    "$Ricco3, $hover",
+                                    "OoLMovement, $rocket, ^$canReachWithHover",
+                                    "OoLMovement, $rocket, ^$canReachWithTurbo"
+                                ],
                                 "visibility_rules": [ "episode3", "allepisodes" ],
                                 "item_count": 1
                             }
@@ -335,7 +343,11 @@
                             {
                                 "name": "Rocket Box (Gelato)",
                                 "access_rules": [ 
-                                    "$rocket"
+                                    "$Gelato5, $splasher",
+                                    "$Gelato5, $rocket",
+                                    "OoLMovement, ^$canReachWithHover",
+                                    "OoLMovement, ^$canReachWithTurbo",
+                                    "OoLMovement, ^$canReachWithSpray"
                                 ],
                                 "visibility_rules": [ "episode5", "episode6", "episode7", "episode8", "allepisodes" ],
                                 "item_count": 1
@@ -362,8 +374,11 @@
                         "sections": [
                             {
                                 "name": "Rocket Box (Noki)",
-                                "access_rules": [ "$rocket" ],
-                                "visibility_rules": [ "allepisodes" ],
+                                "access_rules": [
+                                    "$height",
+                                    "OoLMovement, ^$canReachWithTurbo"
+                                ],
+                                "visibility_rules": [ "$allEpisodes" ],
                                 "item_count": 1
                             }
                         ],
@@ -384,15 +399,21 @@
             },
             {
                 "name": "Pianta Village",
-                "access_rules": [ "$isPiantaEnterable" ],
+                "access_rules": [
+                    "$isPiantaEnterable, $rocket",
+                    "$isPiantaEnterable, OoLMovement, ^$canReachWithHover",
+                    "$isPiantaEnterable, OoLMovement, ^$canReachWithYoshi"
+                ],
                 "children": [
                     {
                         "name": "Rocket Box (Pianta)",
-                        "access_rules": [],
                         "sections": [
                             {
                                 "name": "Rocket Box (Pianta)",
-                                "access_rules": ["$spray, $yoshi, $rocket"],
+                                "access_rules": [
+                                    "$Pianta8",
+                                    "OoLGlitches, ^$canReachWithHover"
+                                ],
                                 "visibility_rules": [ "episode8", "allepisodes" ],
                                 "item_count": 1
                             }
@@ -417,7 +438,12 @@
                         "sections": [
                             {
                                 "name": "Rocket Box (Corona)",
-                                "access_rules": [ "$spray, $hover, $rocket" ],
+                                "access_rules": [
+                                    "$spray, $hover",
+                                    "OoLMovement, $hover, ^$canReachWithTurbo",
+                                    "OoLMovement, $rocket, ^$canReachWithTurbo",
+                                    "OoLMovement, $rocket, ^$canReachWithSpray"
+                                ],
                                 "item_count": 1
                             }
                         ],
@@ -483,7 +509,10 @@
                         "sections": [
                             {
                                 "name": "Turbo Box (Bianco)",
-                                "access_rules": [ "$splasher, $turbo" ],
+                                "access_rules": [
+                                    "$Bianco6, $splasher",
+                                    "OoLMovement, $turbo, ^$canReachWithSpray"
+                                ],
                                 "visibility_rules": [ "episode6", "allepisodes" ],
                                 "item_count": 1
                             }
@@ -508,7 +537,10 @@
                         "sections": [
                             {
                                 "name": "Turbo Box (Ricco)",
-                                "access_rules": [ "$turbo" ],
+                                "access_rules": [
+                                    "$Ricco8",
+                                    "OoLMovement, $hover, ^$canReachWithTurbo"
+                                ],
                                 "visibility_rules": [ "episode8", "allepisodes" ],
                                 "item_count": 1
                             }
@@ -533,7 +565,11 @@
                         "sections": [
                             {
                                 "name": "Turbo Box (Gelato)",
-                                "access_rules": [ "$turbo" ],
+                                "access_rules": [
+                                    "$Gelato4",
+                                    "OoLMovement, ^$canReachWithTurbo",
+                                    "OoLMovement, ^$canReachWithHover"
+                                ],
                                 "visibility_rules": [ "episode4", "allepisodes" ],
                                 "item_count": 1
                             }
@@ -559,7 +595,12 @@
                         "sections": [
                             {
                                 "name": "Turbo Box (Noki)",
-                                "access_rules": [ "$hover, $turbo"],
+                                "access_rules": [
+                                    "$spray, $hover",
+                                    "OoLMovement, ^$canReachWithHover",
+                                    "OoLMovement, ^$canReachWithSpray",
+                                    "OoLGlitches, ^$canReachWithTurbo"
+                                ],
                                 "visibility_rules": [ "episode6", "episode7", "episode8", "allepisodes" ],
                                 "item_count": 1
                             },

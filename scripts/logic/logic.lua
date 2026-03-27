@@ -66,7 +66,7 @@ function rocket()
     return has("rocket")
 end
 
--- Yoshi Logic
+-- Pinna and Yoshi Logic
 
 function isPinnaEnterable()
     if has("progression") == has("progression_ticket") then
@@ -76,8 +76,38 @@ function isPinnaEnterable()
     end
 end
 
+function Pinna2()
+    if spray() or skipPinnaYoshi() then
+        return true
+    end
+end
+
+function Pinna3()
+    if spray() and hover() then
+        return true
+    else
+        return skipPinnaYoshi
+    end
+end
+
 function Pinna4()
-    return has("fludd") and has("hover")
+    return Pinna3()
+end
+
+function Pinna5()
+    return Pinna3()
+end
+
+function Pinna6()
+    return spray() and hover()
+end
+
+function Pinna7()
+    return Pinna6()
+end
+
+function Pinna8()
+    return Pinna6
 end
 
 function yoshi()
@@ -116,28 +146,41 @@ function skipintro()
     return has("nozzlefluddless")
 end
 
--- Out of Logic
+---Glitched Logic
 
-function canReachWithoutRocket()
-    if has("rocket") then
-        return AccessibilityLevel.Normal
-    elseif has("hover") then
+function canReachFluddless()
+    return AccessibilityLevel.SequenceBreak
+end
+
+function canReachWithSpray()
+    if spray() then
         return AccessibilityLevel.SequenceBreak
-    else
-        return AccessibilityLevel.None
     end
 end
 
-function canReachWithoutHover()
-    if has("hover") then
-        return AccessibilityLevel.Normal
-    elseif has("rocket") then
+function canReachWithHover()
+    if hover() then
         return AccessibilityLevel.SequenceBreak
-    else
-        return AccessibilityLevel.None
     end
 end
 
+function canReachWithRocket()
+    if rocket() then
+        return AccessibilityLevel.SequenceBreak
+    end
+end
+
+function canReachWithTurbo()
+    if turbo() then
+        return AccessibilityLevel.SequenceBreak
+    end
+end
+
+function canReachWithYoshi()
+    if yoshi() then
+        return AccessibilityLevel.SequenceBreak
+    end
+end
 
 -- Entrance Functions
 -- Function for Corona and Airstrip Entrances
@@ -156,12 +199,32 @@ function isBiancoEnterable()
     end
 end
 
+function Bianco2()
+    return spray()
+end
+
 function Bianco3()
-    return has("fludd")
+    return spray() and hover()
 end
 
 function Bianco4()
-    return has("fludd") and has("hover")
+    return Bianco3()
+end
+
+function Bianco5()
+    return Bianco3()
+end
+
+function Bianco6()
+    return Bianco3()
+end
+
+function Bianco7()
+    return Bianco3()
+end
+
+function Bianco8()
+    return Bianco3()
 end
 
 -- Ricco
@@ -174,6 +237,33 @@ function isRiccoEnterable()
     end
 end
 
+function Ricco2()
+    return spray()
+end
+
+function Ricco3()
+    return Ricco2()
+end
+
+function Ricco4()
+    return spray() and height()
+end
+
+function Ricco5()
+    return Ricco4()
+end
+
+function Ricco6()
+    return Ricco4()
+end
+
+function Ricco7()
+    return Ricco4()
+end
+
+function Ricco8()
+    return Ricco4()
+end
 
 -- Gelato
 
@@ -183,6 +273,34 @@ function isGelatoEnterable()
     elseif has("progression") == has("progression_vanilla") then
         return (has("fludd") or has("yoshi") or has("hover")) and shines() >= 5
     end
+end
+
+function Gelato2()
+    return splasher()
+end
+
+function Gelato3()
+    return spray()
+end
+
+function Gelato4()
+    return Gelato3()
+end
+
+function Gelato5()
+    return spray() and hover()
+end
+
+function Gelato6()
+    return Gelato5()
+end
+
+function Gelato7()
+    return Gelato5()
+end
+
+function Gelato8()
+    return Gelato5()
 end
 
 --Sirena
@@ -195,6 +313,34 @@ function isSirenaEnterable()
     end
 end
 
+function Sirena2()
+    return spray()
+end
+
+function Sirena3()
+    return Sirena2()
+end
+
+function Sirena4()
+    return spray() and hover() and yoshi()
+end
+
+function Sirena5()
+    return Sirena4()
+end
+
+function Sirena6()
+    return Sirena4()
+end
+
+function Sirena7()
+    return Sirena4()
+end
+
+function Sirena8()
+    return Sirena4()
+end
+
 --Noki
 
 function isNokiEnterable()
@@ -205,14 +351,70 @@ function isNokiEnterable()
     end
 end
 
+function Noki2()
+    return spray() and hover()
+end
+
+function Noki3()
+    return Noki2()
+end
+
+function Noki4()
+    return Noki2()
+end
+
+function Noki5()
+    return Noki2()
+end
+
+function Noki6()
+    return Noki2()
+end
+
+function Noki7()
+    return Noki2()
+end
+
+function Noki8()
+    return Noki2()
+end
+
 -- Pianta
 
 function isPiantaEnterable()
     if has("progression") == has("progression_ticket") then
-        return has("pianta") and has("rocket")
+        return has("pianta")
     elseif has("progression") == has("progression_vanilla") then
-        return shines() >= 10 and has("rocket")
+        return shines() >= 10
     end
+end
+
+function Pianta2()
+    return splasher()
+end
+
+function Pianta3()
+    return Pianta2()
+end
+
+function Pianta4()
+    return hover()
+end
+
+function Pianta5()
+    return Pianta4()
+end
+
+function Pianta6()
+    return hover() and yoshi()
+end
+
+function Pianta7()
+    return Pianta6()
+end
+
+function Pianta8()
+    return hover() and yoshi() and spray()
 end
 
 -- Boathouse
