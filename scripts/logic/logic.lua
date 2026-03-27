@@ -136,6 +136,16 @@ function iscoronaenterable()
     return hascoronashines()
 end
 
+-- Boathouse
+
+function isBoatHouseEnterable()
+    if has("progression") == has("progression_vanilla") then
+        return squirter() and shines() >= 3
+    else
+        return has("progression") == has("progression_ticket")
+    end
+end
+
 -- Bianco
 
 function isBiancoEnterable()
