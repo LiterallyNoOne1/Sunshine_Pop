@@ -66,63 +66,10 @@ function rocket()
     return has("rocket")
 end
 
--- Pinna and Yoshi Logic
-
-function isPinnaEnterable()
-    if has("progression") == has("progression_ticket") then
-        return has("pinna")
-    elseif has("progression") == has("progression_vanilla") then
-        return shines() >= 10
-    end
-end
-
-function Pinna2()
-    if spray() or skipPinnaYoshi() then
-        return true
-    end
-end
-
-function Pinna3()
-    if spray() and hover() then
-        return true
-    else
-        return skipPinnaYoshi
-    end
-end
-
-function Pinna4()
-    return Pinna3()
-end
-
-function Pinna5()
-    return Pinna3()
-end
-
-function Pinna6()
-    return spray() and hover()
-end
-
-function Pinna7()
-    return Pinna6()
-end
-
-function Pinna8()
-    return Pinna6
-end
-
 function yoshi()
-    if has("yoshistart") == has("skip_pinna") then
-        return has("yoshi")
-    elseif has("yoshistart") == has("plaza_only") then
-        return isPinnaEnterable() and Pinna4()
-    end
+    return has("yoshi")
 end
 
-function skipPinnaYoshi()
-    if has("yoshistart") == has("skip_pinna") then
-        return has("yoshi")
-    end
-end
 -- General Items
 
 function splasher()
@@ -301,6 +248,44 @@ end
 
 function Gelato8()
     return Gelato5()
+end
+
+-- Pinna
+
+function isPinnaEnterable()
+    if has("progression") == has("progression_ticket") then
+        return has("pinna")
+    elseif has("progression") == has("progression_vanilla") then
+        return shines() >= 10
+    end
+end
+
+function Pinna2()
+    return spray()
+end
+
+function Pinna3()
+    return spray() and hover()
+end
+
+function Pinna4()
+    return Pinna3()
+end
+
+function Pinna5()
+    return Pinna3()
+end
+
+function Pinna6()
+    return spray() and hover() and yoshi()
+end
+
+function Pinna7()
+    return Pinna6()
+end
+
+function Pinna8()
+    return Pinna6()
 end
 
 --Sirena
