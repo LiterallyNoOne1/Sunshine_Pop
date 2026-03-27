@@ -277,15 +277,15 @@ function Pinna5()
 end
 
 function Pinna6()
-    return Pinna3()
+    return spray() and hover() and yoshi()
 end
 
 function Pinna7()
-    return Pinna3()
+    return Pinna6()
 end
 
 function Pinna8()
-    return Pinna3()
+    return Pinna6()
 end
 
 --Sirena
