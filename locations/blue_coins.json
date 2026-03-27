@@ -2964,7 +2964,6 @@
         "visibility_rules":["episode2", "allepisodes"],
         "access_rules": [
           "$spray",
-          "$skipPinnaYoshi",
           "OoLGlitches, ^$canReachFluddless"
         ],
         "sections": [
@@ -2987,7 +2986,6 @@
         "visibility_rules":["episode2", "allepisodes"],
         "access_rules": [
           "$spray",
-          "$skipPinnaYoshi",
           "OoLGlitches, ^$canReachFluddless"
         ],
         "sections": [
@@ -3010,7 +3008,6 @@
         "visibility_rules":["episode2", "allepisodes"],
         "access_rules": [
           "$spray",
-          "$skipPinnaYoshi",
           "OoLGlitches, ^$canReachFluddless"
         ],
         "sections": [
@@ -3033,7 +3030,6 @@
         "visibility_rules":["episode2", "allepisodes"],
         "access_rules": [
           "$spray",
-          "$skipPinnaYoshi",
           "OoLGlitches, ^$canReachFluddless"
         ],
         "sections": [
@@ -3056,7 +3052,6 @@
         "visibility_rules":["episode2", "allepisodes"],
         "access_rules": [
           "$spray",
-          "$skipPinnaYoshi",
           "OoLGlitches, ^$canReachFluddless"
         ],
         "sections": [
@@ -3079,7 +3074,6 @@
         "visibility_rules":["episode2", "allepisodes"],
         "access_rules": [
           "$spray",
-          "$skipPinnaYoshi",
           "OoLGlitches, ^$canReachFluddless"
         ],
         "sections": [
