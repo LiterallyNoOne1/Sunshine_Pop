@@ -36,6 +36,7 @@ Tracker:AddLocations("locations/blue_coins.json")
 Tracker:AddLocations("locations/coin_shines.json")
 Tracker:AddLocations("locations/totals_screen.json")
 Tracker:AddLocations("locations/nozzle_boxes.json")
+Tracker:AddLocations("locations/secret_shines.json")
 
 -- Layout
 Tracker:AddLayouts("layouts/items.json")
