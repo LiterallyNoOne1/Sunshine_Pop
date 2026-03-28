@@ -1,21 +1,36 @@
 {
   "ricco": {
-    "type": "container",
-    "content": [
+    "type": "tabbed",
+    "orientation": "horizontal",
+    "style": "wrap",
+    "tabs": [
       {
-        "type": "array",
-        "orientation": "horizontal",
-        "style": "wrap",
-        "content": [
-          {
-            "type": "map",
-            "maps": [
-              "Ricco Harbor"
-            ]
-          }
-        ]
+        "title": "Ricco Harbor",
+        "content": {
+          "type": "map",
+          "maps": [
+            "Ricco Harbor"
+          ]
+        }
+      },
+      {
+        "title": "Blooper Surfing Safari",
+        "content": {
+          "type": "map",
+          "maps": [
+            "Blooper Surfing Safari"
+          ]
+        }
+      },
+      {
+        "title": "The Secret of Ricco Tower",
+        "content": {
+          "type": "map",
+          "maps": [
+            "The Secret of Ricco Tower"
+          ]
+        }
       }
     ]
   }
 }
-  

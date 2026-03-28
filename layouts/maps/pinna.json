@@ -1,21 +1,36 @@
 {
   "pinna": {
-    "type": "container",
-    "content": [
+    "type": "tabbed",
+    "orientation": "horizontal",
+    "style": "wrap",
+    "tabs": [
       {
-        "type": "array",
-        "orientation": "horizontal",
-        "style": "wrap",
-        "content": [
-          {
-            "type": "map",
-            "maps": [
-              "Pinna Park"
-            ]
-          }
-        ]
+        "title": "Pinna Park",
+        "content": {
+          "type": "map",
+          "maps": [
+            "Pinna Park"
+          ]
+        }
+      },
+      {
+        "title": "The Beach Cannon's Secret",
+        "content": {
+          "type": "map",
+          "maps": [
+            "The Beach Cannon's Secret"
+          ]
+        }
+      },
+      {
+        "title": "The Yoshi-Go-Round's Secret",
+        "content": {
+          "type": "map",
+          "maps": [
+            "The Yoshi-Go-Round's Secret"
+          ]
+        }
       }
     ]
   }
 }
-  

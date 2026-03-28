@@ -21,6 +21,51 @@
             "Delfino Airstrip"
           ]
         }
+      },
+      {
+        "title": "Lilly Pad Ride",
+        "content": {
+          "type": "map",
+          "maps": [
+            "Lilly Pad Ride"
+          ]
+        }
+      },
+      {
+        "title": "Pachinko",
+        "content": {
+          "type": "map",
+          "maps": [
+            "Pachinko"
+          ]
+        }
+      },
+      {
+        "title": "Red Coin Field",
+        "content": {
+          "type": "map",
+          "maps": [
+            "Red Coin Field"
+          ]
+        }
+      },
+      {
+        "title": "Super Slide",
+        "content": {
+          "type": "map",
+          "maps": [
+            "Super Slide"
+          ]
+        }
+      },
+      {
+        "title": "Turbo Track",
+        "content": {
+          "type": "map",
+          "maps": [
+            "Turbo Track"
+          ]
+        }
       }
     ]
   }

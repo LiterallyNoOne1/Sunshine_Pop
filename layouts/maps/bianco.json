@@ -1,19 +1,35 @@
 {
   "bianco": {
-    "type": "container",
-    "content": [
+    "type": "tabbed",
+    "orientation": "horizontal",
+    "style": "wrap",
+    "tabs": [
       {
-        "type": "array",
-        "orientation": "horizontal",
-        "style": "wrap",
-        "content": [
-          {
-            "type": "map",
-            "maps": [
-              "Bianco Hills"
-            ]
-          }
-        ]
+        "title": "Bianco Hills",
+        "content": {
+          "type": "map",
+          "maps": [
+            "Bianco Hills"
+          ]
+        }
+      },
+      {
+        "title": "The Hillside Cave Secret",
+        "content": {
+          "type": "map",
+          "maps": [
+            "The Hillside Cave Secret"
+          ]
+        }
+      },
+      {
+        "title": "The Secret of the Dirty Lake",
+        "content": {
+          "type": "map",
+          "maps": [
+            "The Secret of the Dirty Lake"
+          ]
+        }
       }
     ]
   }

@@ -21,6 +21,24 @@
             "Under the Waterfall"
           ]
         }
+      },
+      {
+        "title": "Red Coins in a Bottle",
+        "content": {
+          "type": "map",
+          "maps": [
+            "Bottle"
+          ]
+        }
+      },
+      {
+        "title": "The Shell's Secret",
+        "content": {
+          "type": "map",
+          "maps": [
+            "The Shell's Secret"
+          ]
+        }
       }
     ]
   }

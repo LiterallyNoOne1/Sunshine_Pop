@@ -21,6 +21,24 @@
             "Hotel Delfino"
           ]
         }
+      },
+      {
+        "title": "The Hotel Lobby's Secret",
+        "content": {
+          "type": "map",
+          "maps": [
+            "The Hotel Lobby's Secret"
+          ]
+        }
+      },
+      {
+        "title": "The Secret of Casino Delfino",
+        "content": {
+          "type": "map",
+          "maps": [
+            "The Secret of Casino Delfino"
+          ]
+        }
       }
     ]
   }

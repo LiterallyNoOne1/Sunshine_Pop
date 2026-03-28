@@ -18,10 +18,52 @@
     "img": "images/maps/DelfinoPlaza.png"
   },
   {
+    "name": "Lilly Pad Ride",
+    "location_size": 24,
+    "location_border_thickness": 2,
+    "img": "images/maps/LillyPadRide.png"
+  },
+  {
+    "name": "Pachinko",
+    "location_size": 24,
+    "location_border_thickness": 2,
+    "img": "images/maps/PachinkoGame.png"
+  },
+  {
+    "name": "Red Coin Field",
+    "location_size": 24,
+    "location_border_thickness": 2,
+    "img": "images/maps/RedCoinField.png"
+  },
+  {
+    "name": "Super Slide",
+    "location_size": 24,
+    "location_border_thickness": 2,
+    "img": "images/maps/SuperSlide.png"
+  },
+  {
+    "name": "Turbo Track",
+    "location_size": 24,
+    "location_border_thickness": 2,
+    "img": "images/maps/TurboTrack.png"
+  },
+  {
     "name": "Bianco Hills",
     "location_size": 24,
     "location_border_thickness": 2,
     "img": "images/maps/BiancoHills.png"
+  },
+  {
+    "name": "The Hillside Cave Secret",
+    "location_size": 24,
+    "location_border_thickness": 2,
+    "img": "images/maps/TheHillsideCaveSecret.png"
+  },
+  {
+    "name": "The Secret of the Dirty Lake",
+    "location_size": 24,
+    "location_border_thickness": 2,
+    "img": "images/maps/SecretoftheDirtyLake.png"
   },
   {
     "name": "Ricco Harbor",
@@ -30,10 +72,28 @@
     "img": "images/maps/RiccoHarbor.png"
   },
   {
+    "name": "Blooper Surfing Safari",
+    "location_size": 24,
+    "location_border_thickness": 2,
+    "img": "images/maps/BlooperSurfingSafari.png"
+  },
+  {
+    "name": "The Secret of Ricco Tower",
+    "location_size": 24,
+    "location_border_thickness": 2,
+    "img": "images/maps/TheSecretOfRiccoTower.png"
+  },
+  {
     "name": "Gelato Beach",
     "location_size": 24,
     "location_border_thickness": 2,
     "img": "images/maps/GelatoBeach.png"
+  },
+  {
+    "name": "Dune Bud Sand Castle Secret",
+    "location_size": 24,
+    "location_border_thickness": 2,
+    "img": "images/maps/DuneBudSandCastleSecret.png"
   },
   {
     "name": "Sand Bird",
@@ -48,6 +108,18 @@
     "img": "images/maps/PinnaPark.png"
   },
   {
+    "name": "The Beach Cannon's Secret",
+    "location_size": 24,
+    "location_border_thickness": 2,
+    "img": "images/maps/TheBeachCannonSecret.png"
+  },
+  {
+    "name": "The Yoshi-Go-Round's Secret",
+    "location_size": 24,
+    "location_border_thickness": 2,
+    "img": "images/maps/TheYoshi-Go-RoundSecret.png"
+  },
+  {
     "name": "Sirena Beach",
     "location_size": 24,
     "location_border_thickness": 2,
@@ -58,6 +130,18 @@
     "location_size": 24,
     "location_border_thickness": 2,
     "img": "images/maps/HotelDelfino.png"
+  },
+  {
+    "name": "The Hotel Lobby's Secret",
+    "location_size": 24,
+    "location_border_thickness": 2,
+    "img": "images/maps/HotelLobbySecret.png"
+  },
+  {
+    "name": "The Secret of Casino Delfino",
+    "location_size": 24,
+    "location_border_thickness": 2,
+    "img": "images/maps/TheSecretOfCasinoDelfino.png"
   },
   {
     "name": "Noki Bay",
@@ -72,6 +156,18 @@
     "img": "images/maps/Mare.png"
   },
   {
+    "name": "Bottle",
+    "location_size": 24,
+    "location_border_thickness": 2,
+    "img": "images/maps/RedCoinsinaBottle.png"
+  },
+  {
+    "name": "The Shell's Secret",
+    "location_size": 24,
+    "location_border_thickness": 2,
+    "img": "images/maps/TheShellSecret.png"
+  },
+  {
     "name": "Pianta Village",
     "location_size": 24,
     "location_border_thickness": 2,
@@ -82,6 +178,12 @@
     "location_size": 24,
     "location_border_thickness": 2,
     "img": "images/maps/VillageUnderside.png"
+  },
+  {
+    "name": "Secret of the Village Underside",
+    "location_size": 24,
+    "location_border_thickness": 2,
+    "img": "images/maps/SecretOfTheVillageUnderside.png"
   },
   {
     "name": "Corona Mountain",

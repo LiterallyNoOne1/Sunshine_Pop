@@ -14,6 +14,15 @@
         }
       },
       {
+        "title": "Dune Bud Sand Castle Secret",
+        "content": {
+          "type": "map",
+          "maps": [
+            "Dune Bud Sand Castle Secret"
+          ]
+        }
+      },
+      {
         "title": "Sand Bird",
         "content": {
           "type": "map",
@@ -25,4 +34,3 @@
     ]
   }
 }
-  

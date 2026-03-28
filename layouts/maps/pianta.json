@@ -21,6 +21,15 @@
             "Village Underside"
           ]
         }
+      },
+      {
+        "title": "Secret of the Village Underside",
+        "content": {
+          "type": "map",
+          "maps": [
+            "Secret of the Village Underside"
+          ]
+        }
       }
     ]
   }
