@@ -3,7 +3,7 @@
         {
             "package_version": "0.4.3",
             "download_url": "https://github.com/LiterallyNoOne1/Sunshine_Pop/archive/refs/tags/v0.4.3.zip",
-            "sha256": "",
+            "sha256": "b84183d47a6a97252e5845ea441ba828bc78614fb7da6870e281dfbf96ac6e12",
             "changelog": [
                 "Major logic overhaul to both increase accuracy and add new options",
                 "Added a setting that displays possible out of logic locations split into movement and movement+glitches",
