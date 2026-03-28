@@ -18,10 +18,10 @@
     "img": "images/maps/DelfinoPlaza.png"
   },
   {
-    "name": "Lilly Pad Ride",
+    "name": "Lily Pad Ride",
     "location_size": 24,
     "location_border_thickness": 2,
-    "img": "images/maps/LillyPadRide.png"
+    "img": "images/maps/LilyPadRide.png"
   },
   {
     "name": "Pachinko",
