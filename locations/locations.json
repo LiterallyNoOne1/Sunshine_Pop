@@ -849,18 +849,23 @@
         "name": "Sand Bird Sky Course",
         "sections": [
           {
+            "name": "The Sand Bird is Born",
             "ref": "Gelato Beach/Episode 4/The Sand Bird is Born"
           },
           {
+            "name": "Blue Coin A",
             "ref": "Sand Bird A/Blue Coin"
           },
           {
+            "name": "Blue Coin B",
             "ref": "Sand Bird B/Blue Coin"
           },
           {
+            "name": "Blue Coin C",
             "ref": "Sand Bird C/Blue Coin"
           },
           {
+            "name": "Blue Coin D",
             "ref": "Sand Bird D/Blue Coin"
           }
         ],
@@ -1024,15 +1029,10 @@
         "sections": [
           {
             "name": "The Beach Cannon's Secret",
-            "access_rules":[
-              "$spray",
-              "OoLGlitches, ^$canReachFluddless"
-            ],
             "item_count": 1
           },
           {
             "name": "Red Coins in the Cannon",
-            "access_rules":["$hover"],
             "item_count": 1
           }
         ],
@@ -1049,12 +1049,12 @@
         "visibility_rules":["episode3", "allepisodes"],
         "access_rules": [
           "$spray, $hover",
+          "OoLMovement, ^$canReachWithSpray",
           "OoLGlitches, ^$canReachFluddless"
         ],
         "sections": [
           {
             "name": "Red Coins of the Pirate Ships",
-            "access_rules":["$hover"],
             "item_count": 1
           }
         ],
@@ -1069,17 +1069,17 @@
       {
         "name": "Episode 4",
         "visibility_rules":["episode4", "allepisodes"],
-        "access_rules": [
-        ],
-        "sections": [
-          {
-            "name": "The Wilted Sunflowers",
-            "access_rules":[
-              "$spray, $hover"
+        "access_rules":[
+          "$spray, $hover",
+          "OoLMovement, ^$canReachWithSpray",
+          "OoLGlitches, ^$canReachFluddless"
             ],
-            "item_count": 1
-          }
-        ],
+            "sections": [
+              {
+              "name": "The Wilted Sunflowers",
+              "item_count": 1
+            }
+          ],
         "map_locations": [
           {
             "map": "Pinna Park",
@@ -1092,7 +1092,9 @@
         "name": "Episode 5",
         "visibility_rules":["episode5", "allepisodes"],
         "access_rules": [
-          "$spray, $hover"
+          "$spray, $hover",
+          "OoLMovement, ^$canReachWithSpray",
+          "OoLGlitches, ^$canReachFluddless"
         ],
         "sections": [
           {
@@ -1112,17 +1114,17 @@
         "name": "Episode 6",
         "visibility_rules":["episode6", "allepisodes"],
         "access_rules": [
-          "$spray, $hover"
+          "$spray, $hover, $yoshi",
+          "OoLMovement, $spray, ^$canReachWithYoshi",
+          "OoLGlitches, ^$canReachWithYoshi"
         ],
         "sections": [
           {
             "name": "The Yoshi-Go-Round's Secret",
-            "access_rules":["$yoshi"],
             "item_count": 1
           },
           {
             "name": "Red Coins in the Yoshi-Go-Round",
-            "access_rules":["$yoshi"],
             "item_count": 1
           }
         ],
@@ -1138,7 +1140,11 @@
         "name": "Episode 7",
         "visibility_rules":["episode7", "allepisodes"],
         "access_rules": [
-          "$spray, $hover, $yoshi"
+          "$spray, $hover, $yoshi",
+          "OoLMovement, $yoshi, ^$canReachWithSpray",
+          "OoLGlitches, $yoshi, ^$canReachWithSpray",
+          "OoLGlitches, $yoshi, ^$canReachWithHover",
+          "OoLGlitches, $yoshi, ^$canReachWithTurbo"
         ],
         "sections": [
           {
@@ -1158,7 +1164,9 @@
         "name": "Episode 8",
         "visibility_rules":["episode8", "allepisodes"],
         "access_rules": [
-          "$spray, $hover, $yoshi"
+          "$spray, $hover, $yoshi",
+          "OoLMovement, $yoshi, ^$canReachWithSpray",
+          "OoLGlitches, ^$canReachWithYoshi"
         ],
         "sections": [
           {

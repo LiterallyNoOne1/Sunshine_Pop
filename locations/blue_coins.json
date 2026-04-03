@@ -2503,7 +2503,8 @@
         "visibility_rules":["$allEpisodes"],
         "access_rules": [
           "$splasher",
-          "OoLMovement, ^$canReachWithTurbo"
+          "OoLMovement, ^$canReachWithTurbo",
+          "OoLGlitches, ^$canReachWithYoshi"
         ],
         "sections": [
           {
@@ -2525,7 +2526,8 @@
         "visibility_rules":["$allEpisodes"],
         "access_rules": [
           "$splasher",
-          "OoLMovement, ^$canReachWithTurbo"
+          "OoLMovement, ^$canReachWithTurbo",
+          "OoLGlitches, ^$canReachWithYoshi"
         ],
         "sections": [
           {
@@ -2547,7 +2549,8 @@
         "visibility_rules":["episode1", "episode3", "episode5", "episode6", "episode7", "episode8", "allepisodes"],
         "access_rules": [
           "$splasher",
-          "OoLMovement, ^$canReachWithTurbo"
+          "OoLMovement, ^$canReachWithTurbo",
+          "OoLGlitches, ^$canReachWithYoshi"
         ],
         "sections": [
           {
@@ -2569,7 +2572,8 @@
         "visibility_rules":["episode1", "episode3", "episode5", "episode6", "episode7", "episode8", "allepisodes"],
         "access_rules": [
           "$splasher",
-          "OoLMovement, ^$canReachWithTurbo"
+          "OoLMovement, ^$canReachWithTurbo",
+          "OoLGlitches, ^$canReachWithYoshi"
         ],
         "sections": [
           {
@@ -2591,7 +2595,8 @@
         "visibility_rules":["episode1", "episode3", "episode5", "episode6", "episode7", "episode8", "allepisodes"],
         "access_rules": [
           "$splasher",
-          "OoLMovement, ^$canReachWithTurbo"
+          "OoLMovement, ^$canReachWithTurbo",
+          "OoLGlitches, ^$canReachWithYoshi"
         ],
         "sections": [
           {
@@ -2613,7 +2618,8 @@
         "visibility_rules":["episode1", "episode3", "episode5", "episode6", "episode7", "episode8", "allepisodes"],
         "access_rules": [
           "$splasher",
-          "OoLMovement, ^$canReachWithTurbo"
+          "OoLMovement, ^$canReachWithTurbo",
+          "OoLGlitches, ^$canReachWithYoshi"
         ],
         "sections": [
           {
@@ -2635,7 +2641,8 @@
         "visibility_rules":["episode1", "episode3", "episode5", "episode6", "episode7", "episode8", "allepisodes"],
         "access_rules": [
           "$splasher",
-          "OoLMovement, ^$canReachWithTurbo"
+          "OoLMovement, ^$canReachWithTurbo",
+          "OoLGlitches, ^$canReachWithYoshi"
         ],
         "sections": [
           {
@@ -2656,7 +2663,8 @@
         "name": "Entrance Blue Bird",
         "visibility_rules":["episode1", "episode3", "episode5", "episode6", "episode7", "episode8", "allepisodes"],
         "access_rules": [
-          "$spray"
+          "$spray",
+          "OoLGlitches, ^$canReachWithYoshi"
         ],
         "sections": [
           {
@@ -2677,7 +2685,8 @@
         "name": "Gazebo Blue Bird",
         "visibility_rules":["episode1", "episode3", "episode5", "episode6", "episode7", "episode8", "allepisodes"],
         "access_rules": [
-          "$spray"
+          "$spray",
+          "OoLGlitches, ^$canReachWithYoshi"
         ],
         "sections": [
           {
@@ -2699,7 +2708,8 @@
         "visibility_rules":["episode1", "episode3", "episode5", "episode6", "episode7", "episode8", "allepisodes"],
         "access_rules": [
           "$hover",
-          "OoLMovement, ^$canReachFluddless"
+          "OoLMovement, ^$canReachFluddless",
+          "OoLGlitches, ^$canReachWithYoshi"
         ],
         "sections": [
           {
@@ -2721,7 +2731,8 @@
         "visibility_rules":["episode1", "episode3", "episode5", "episode6", "episode7", "episode8", "allepisodes"],
         "access_rules": [
           "$hover",
-          "OoLMovement, ^$canReachWithRocket"
+          "OoLMovement, ^$canReachWithRocket",
+          "OoLGlitches, ^$canReachWithYoshi"
         ],
         "sections": [
           {
@@ -2744,7 +2755,8 @@
         "access_rules": [
           "$spray",
           "OoLMovement, ^$canReachWithTurbo",
-          "OoLMovement, ^$canReachWithHover"
+          "OoLMovement, ^$canReachWithHover",
+          "OoLGlitches, ^$canReachWithYoshi"
         ],
         "sections": [
           {
@@ -2767,7 +2779,8 @@
         "access_rules": [
           "$spray",
           "OoLMovement, ^$canReachWithTurbo",
-          "OoLMovement, ^$canReachWithHover"
+          "OoLMovement, ^$canReachWithHover",
+          "OoLGlitches, ^$canReachWithYoshi"
         ],
         "sections": [
           {
@@ -2788,7 +2801,8 @@
         "name": "Ferris M",
         "visibility_rules":["episode1", "episode3", "episode5", "episode6", "episode7", "episode8", "allepisodes"],
         "access_rules": [
-          "$splasher"
+          "$splasher",
+          "OoLGlitches, ^$canReachWithYoshi"
         ],
         "sections": [
           {
@@ -2810,7 +2824,8 @@
         "visibility_rules":["episode1", "episode3", "episode5", "episode6", "episode7", "episode8", "allepisodes"],
         "access_rules": [
           "$splasher",
-          "OoLMovement, ^$canReachWithTurbo"
+          "OoLMovement, ^$canReachWithTurbo",
+          "OoLGlitches, ^$canReachWithYoshi"
         ],
         "sections": [
           {
@@ -2832,7 +2847,8 @@
         "visibility_rules":["episode1", "episode3", "episode5", "episode6", "episode7", "episode8", "allepisodes"],
         "access_rules": [
           "$splasher",
-          "OoLMovement, ^$canReachWithTurbo"
+          "OoLMovement, ^$canReachWithTurbo",
+          "OoLGlitches, ^$canReachWithYoshi"
         ],
         "sections": [
           {
@@ -2876,7 +2892,8 @@
         "visibility_rules":["episode1", "episode3", "episode5", "episode6", "episode7", "episode8", "allepisodes"],
         "access_rules": [
           "$hover",
-          "OoLMovement, ^$canReachWithRocket"
+          "OoLMovement, ^$canReachWithRocket",
+          "OoLGlitches, ^$canReachWithYoshi"
         ],
         "sections": [
           {
@@ -2942,7 +2959,8 @@
         "visibility_rules":["episode1", "episode3", "episode5", "episode6", "episode7", "episode8", "allepisodes"],
         "access_rules": [
           "$splasher",
-          "OoLMovement, ^$canReachWithTurbo"
+          "OoLMovement, ^$canReachWithTurbo",
+          "OoLGlitches, ^$canReachWithYoshi"
         ],
         "sections": [
           {
@@ -3095,7 +3113,9 @@
         "name": "Beach Blue Butterfly A",
         "visibility_rules":["episode6", "episode7", "episode8", "allepisodes"],
         "access_rules": [
-          "$spray, $hover, $yoshi"
+          "$spray, $hover, $yoshi",
+          "OoLMovement, $yoshi, ^$canReachWithSpray",
+          "OoLGlitches, ^$canReachWithYoshi"
         ],
         "sections": [
           {
@@ -3116,7 +3136,9 @@
         "name": "Beach Blue Butterfly B",
         "visibility_rules":["episode6", "episode7", "episode8", "allepisodes"],
         "access_rules": [
-          "$spray, $hover, $yoshi"
+          "$spray, $hover, $yoshi",
+          "OoLMovement, $yoshi, ^$canReachWithSpray",
+          "OoLGlitches, ^$canReachWithYoshi"
         ],
         "sections": [
           {
@@ -3137,7 +3159,9 @@
         "name": "Park Blue Butterfly",
         "visibility_rules":["episode6", "allepisodes"],
         "access_rules": [
-          "$spray, $hover, $yoshi"
+          "$spray, $hover, $yoshi",
+          "OoLMovement, $yoshi, ^$canReachWithSpray",
+          "OoLGlitches, ^$canReachWithYoshi"
         ],
         "sections": [
           {
