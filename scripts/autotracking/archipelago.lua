@@ -96,24 +96,24 @@ function onClear(slot_data)
         coronashines.AcquiredCount = (slot_data['corona_mountain_shines'])
     end
 
-    if slot_data['yoshi_mode'] then
-        local yoshster = Tracker:FindObjectForCode('yoshistart')
-        yoshster.CurrentStage = (slot_data['yoshi_mode'])
-    end
-
-    if slot_data['ticket_mode'] then
+    if slot_data['level_access'] then
         local ticketing = Tracker:FindObjectForCode("progression")
-        ticketing.CurrentStage = (slot_data['ticket_mode'])
+        ticketing.CurrentStage = (slot_data['level_access'])
     end
 
-    if slot_data['coin_shine_enabled'] then
+    if slot_data['enabled_coin_shines'] then
         local coinsanity = Tracker:FindObjectForCode("coin_shines_enabled")
-        coinsanity.Active = (slot_data['coin_shine_enabled'])
+        coinsanity.Active = (slot_data['enabled_coin_shines'])
     end
 
-    if slot_data['boathouse_maximum'] then
+    if slot_data['trade_shine_maximum'] then
         local boating = Tracker:FindObjectForCode("boat_maximum")
-        boating.AcquiredCount = (slot_data['boathouse_maximum'])
+        boating.AcquiredCount = (slot_data['trade_shine_maximum'])
+    end
+
+    if slot_data['difficulty'] then
+        local logicdif = Tracker:FindObjectForCode("logicDisplay")
+        logicdif.CurrentStage = (slot_data['difficulty'])
     end
 
     if Archipelago.PlayerNumber > -1 then
