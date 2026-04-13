@@ -116,6 +116,11 @@ function onClear(slot_data)
         logicdif.CurrentStage = (slot_data['difficulty'])
     end
 
+    if slot_data['AllShinesSelectable'] then
+        local OpenShines = Tracker:FindObjectForCode('OpenAllEpisodes')
+        OpenShines.CurrentStage = (slot_data['AllShinesSelectable'])
+    end
+
     if Archipelago.PlayerNumber > -1 then
         print("SUCCESS?")
         cur_stage = "sms_map_"..TEAM_NUMBER.."_"..PLAYER_ID
