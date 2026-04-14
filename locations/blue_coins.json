@@ -1613,7 +1613,7 @@
       },
       {
         "name": "Tower Rocket",
-        "visibility_rules":["allepisodes"],
+        "visibility_rules":["$allEpisodes"],
         "access_rules": [
           "$Ricco3, $rocket",
           "OoLMovement, ^$canReachWithRocket"
