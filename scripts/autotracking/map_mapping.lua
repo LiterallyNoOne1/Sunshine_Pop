@@ -17,7 +17,7 @@ MAP_MAPPING = {
     ["21"] = {"Delfino Plaza", "Super Slide"},
     ["22"] = {"Delfino Plaza", "Pachinko"},
     ["23"] = {"Delfino Plaza", "Red Coin Field"},
-    ["24"] = {"Delfino Plaza", "Lily Pad Ride"},
+    ["24"] = {"Delfino Plaza", "Lilly Pad Ride"},
     ["29"] = {"Delfino Plaza", "Turbo Track"},
     ["30"] = {"Ricco Harbor", "Blooper Surfing Safari"},
     ["31"] = {"Noki Bay", "The Shell's Secret"},
@@ -36,7 +36,7 @@ MAP_MAPPING = {
     ["55"] = {"Bianco Hills", "Bianco Hills"}, -- Bianco 1 Petey Piranha fight
     ["56"] = {"Sirena Beach", "Hotel Delfino"}, -- Sirena 5 King Boo fight
     ["57"] = {"Noki Bay", "Under the Waterfall"},
-    ["58"] = {"Pinna Park", "Pinna Park"}, -- idk what this is
+    ["58"] = {"Pinna Park", "Pinna Park"}, -- pinna 1 mecha bowser fight
     ["59"] = {"Ricco Harbor", "Ricco Harbor"}, -- ricco 1 blooper fight
     ["60"] = {"Corona Mountain"} -- Bowser Fight
 }

@@ -16,9 +16,10 @@ Check out the Sunshine Thread in AP server for more info
 
 ## Credits
 
+* LiterallyNoOne1: Current maintainer
 * UmedMuzl: Original developer of the SMS Poptracker Pack, allowed me to fork and continue maintaining the tracker
-* Sparky5000: Major Contributor for his work on the OoL/Glitch logic and the Display Logic Toggles
-* Schwarts Gandhi: Major Contributor for his work on the layout and most of the logic
+* Sparky5000: Major Contributor for his work on logic re-writes, logic difficulty toggles, and various other changes and fixes
+* Schwarts Gandhi: Major Contributor for his work on the layout and most of the original logic
 * JXJacob: Helped get Umed setup with finding item and location mapping plus helping him a lot with figuring out how autotracking works
 * VGCartographer: DeviantArtist who provided all the maps to make this possible
 

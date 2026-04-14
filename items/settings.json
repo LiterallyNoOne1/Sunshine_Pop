@@ -196,28 +196,54 @@
         ]
     },
     {
-        "name": "GlitchLogicDisplay",
+        "name": "LogicDifficulties",
         "type": "progressive",
         "loop": true,
         "allow_disabled": false,
         "stages": [
             {
                 "img": "images/settings/StandardLogic.png",
-                "name": "Display Standard Logic Only",
-                "codes": "DisplayLogic,StandardLogic",
+                "name": "Difficulty - Standard",
+                "codes": "LogicDisplay,StandardLogic",
                 "inherit_codes": false
             },
             {
-                "img": "images/settings/OoLMovement.png",
-                "name": "Display Out of Logic Movement",
-                "codes": "DisplayLogic,OoLMovement",
+                "img": "images/settings/HardLogic.png",
+                "name": "Difficulty - Hard",
+                "codes": "LogicDisplay,HardLogic",
                 "inherit_codes": true
             },
             {
-                "img": "images/settings/GlitchedLogic.png",
-                "name": "Display Movement + Glitches",
-                "codes": "DisplayLogic,OoLGlitches",
+                "img": "images/settings/AdvancedLogic.png",
+                "name": "Difficulty - Advanced",
+                "codes": "LogicDisplay,AdvancedLogic",
                 "inherit_codes": true
+            },
+            {
+                "img": "images/settings/SaltyLogic.png",
+                "name": "Difficulty - Salty Tears",
+                "codes": "LogicDisplay,SaltyLogic",
+                "inherit_codes": true
+            }
+        ]
+    },
+    {
+        "name": "OpenAllEpisodes",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "img": "images/settings/OpenEpisodes.png",
+                "name": "All Episodes Open From start",
+                "codes": "OpenAllEpisodes,OpenEpisodes",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/settings/ClosedEpisodes.png",
+                "name": "Vanilla Episode Progression",
+                "codes": "OpenAllEpisodes,ClosedEpisodes",
+                "inherit_codes": false
             }
         ]
     }

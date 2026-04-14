@@ -20,8 +20,8 @@
         "map_locations": [
           {
             "map": "Delfino Plaza",
-            "x": 1549,
-            "y": 612,
+            "x": 1553,
+            "y": 619,
             "size": 16
           }
         ]
@@ -42,8 +42,8 @@
         "map_locations": [
           {
             "map": "Delfino Plaza",
-            "x": 1035,
-            "y": 666,
+            "x": 1135,
+            "y": 696,
             "size": 16
           }
         ]
@@ -192,7 +192,7 @@
         "map_locations": [
           {
             "map": "Delfino Plaza",
-            "x": 1076,
+            "x": 1079,
             "y": 507,
             "size": 16
           }
@@ -254,7 +254,7 @@
           {
             "map": "Delfino Plaza",
             "x": 659,
-            "y": 592,
+            "y": 600,
             "size": 16
           }
         ]
@@ -338,7 +338,7 @@
         "map_locations": [
           {
             "map": "Delfino Plaza",
-            "x": 964,
+            "x": 970,
             "y": 473,
             "size": 16
           }

@@ -11,7 +11,7 @@
                 "h_alignment": "center",
                 "rows": [
                     ["progression", "coin_shines_enabled", "blues", "nozzlestart"],
-                    ["coronashines", "boat_maximum", "DisplayLogic"],
+                    ["coronashines", "boat_maximum", "LogicDisplay", "OpenAllEpisodes"],
                     ["automap"]
                 ]
             }

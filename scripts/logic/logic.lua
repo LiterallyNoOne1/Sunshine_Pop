@@ -72,6 +72,10 @@ end
 
 -- General Items
 
+function fluddless()
+    return true
+end
+
 function splasher()
     return has("fludd") or has("hover")
 end
@@ -88,43 +92,53 @@ function squirter()
     return has("fludd") or has("yoshi")
 end
 
+function sprocket()
+    return has("fludd") and has("rocket")
+end
+
+function sprover()
+    return has("fludd") and has("hover")
+end
+
+function anyfludd()
+    return has("fludd") or has("hover") or has("rocket") or has("turbo")
+end
 
 function skipintro()
     return has("nozzlefluddless")
 end
 
----Glitched Logic
-
-function canReachFluddless()
-    return AccessibilityLevel.SequenceBreak
+function skipforward()
+    return has("nozzlefluddless") or has("progression_ticket")
 end
 
-function canReachWithSpray()
-    if spray() then
+---Difficulty Settings Logic
+function StandardLogic()
+    if has("StandardLogic") then
+        return true
+    end
+end
+
+function HardLogic()
+    if has("HardLogic") then
+        return AccessibilityLevel.Normal
+    elseif has("StandardLogic") then
         return AccessibilityLevel.SequenceBreak
     end
 end
 
-function canReachWithHover()
-    if hover() then
+function AdvancedLogic()
+    if has("AdvancedLogic") then
+        return AccessibilityLevel.Normal
+    elseif has("HardLogic") then
         return AccessibilityLevel.SequenceBreak
     end
 end
 
-function canReachWithRocket()
-    if rocket() then
-        return AccessibilityLevel.SequenceBreak
-    end
-end
-
-function canReachWithTurbo()
-    if turbo() then
-        return AccessibilityLevel.SequenceBreak
-    end
-end
-
-function canReachWithYoshi()
-    if yoshi() then
+function SaltyLogic()
+    if has("SaltyLogic") then
+        return AccessibilityLevel.Normal
+    elseif has("AdvancedLogic") then
         return AccessibilityLevel.SequenceBreak
     end
 end
@@ -140,7 +154,7 @@ end
 
 function isBoatHouseEnterable()
     if has("progression") == has("progression_vanilla") then
-        return squirter() and shines() >= 3
+        return splasher() and shines() >= 3
     else
         return has("progression") == has("progression_ticket")
     end
@@ -152,16 +166,36 @@ function isBiancoEnterable()
     if has("progression") == has("progression_ticket") then
         return has("bianco")
     elseif has("progression") == has("progression_vanilla") then
-        return squirter()
+        return splasher()
     end
 end
 
+function Bianco1()
+    return true
+end
+
 function Bianco2()
-    return spray()
+    if has("OpenEpisodes") then
+        return true
+    elseif has("AdvancedLogic") then
+        return splasher() or turbo()
+    elseif has("HardLogic") then
+        return splasher()
+    else
+        return spray()
+    end
 end
 
 function Bianco3()
-    return spray() and hover()
+    if has("OpenEpisodes") then
+        return true
+    elseif has("AdvancedLogic") then
+        return splasher() or turbo()
+    elseif has("HardLogic") then
+        return splasher()
+    else
+        return sprover()
+    end
 end
 
 function Bianco4()
@@ -173,15 +207,21 @@ function Bianco5()
 end
 
 function Bianco6()
-    return Bianco3()
+    if has("OpenEpisodes") then
+        return true
+    elseif has("HardLogic") then
+        return spray()
+    else
+        return sprover()
+    end
 end
 
 function Bianco7()
-    return Bianco3()
+    return Bianco6()
 end
 
 function Bianco8()
-    return Bianco3()
+    return Bianco6()
 end
 
 -- Ricco
@@ -190,20 +230,38 @@ function isRiccoEnterable()
     if has("progression") == has("progression_ticket") then
         return has("ricco")
     elseif has("progression") == has("progression_vanilla") then
-        return squirter() and shines() >= 3
+        return splasher() and shines() >= 3
     end
 end
 
+function Ricco1()
+    return true
+end
+
 function Ricco2()
-    return spray()
+    if has("OpenEpisodes") then
+        return true
+    elseif has("AdvancedLogic") then
+        return anyfludd()
+    elseif has("HardLogic") then
+        return splasher() or turbo()
+    else
+        return splasher()
+    end
 end
 
 function Ricco3()
-    return Ricco2()
+    return Ricco2
 end
 
 function Ricco4()
-    return spray() and height()
+    if has("OpenEpisodes") then
+        return true
+    elseif has("HardLogic") then
+        return splasher() or turbo()
+    else
+        return hover() or sprocket()
+    end
 end
 
 function Ricco5()
@@ -219,7 +277,13 @@ function Ricco7()
 end
 
 function Ricco8()
-    return Ricco4()
+    if has("OpenEpisodes") then
+        return true
+    elseif has("HardLogic") then
+        return splasher()
+    else
+        return sprover() or sprocket()
+    end
 end
 
 -- Gelato
@@ -228,16 +292,32 @@ function isGelatoEnterable()
     if has("progression") == has("progression_ticket") then
         return has("gelato")
     elseif has("progression") == has("progression_vanilla") then
-        return (has("fludd") or has("yoshi") or has("hover")) and shines() >= 5
+        return splasher() and shines() >= 5
     end
 end
 
+function Gelato1()
+    return true
+end
+
 function Gelato2()
-    return splasher()
+    if has("OpenEpisodes") then
+        return true
+    else
+        return splasher() or turbo()
+    end
 end
 
 function Gelato3()
-    return spray()
+    if has("OpenEpisodes") then
+        return true
+    elseif has("AdvancedLogic") then
+        return splasher() or turbo()
+    elseif has("HardLogic") then
+        return splasher()
+    else
+        return spray()
+    end
 end
 
 function Gelato4()
@@ -245,7 +325,13 @@ function Gelato4()
 end
 
 function Gelato5()
-    return spray() and hover()
+    if has("OpenEpisodes") then
+        return true
+    elseif has("HardLogic") then
+        return splasher()
+    else
+        return sprover()
+    end
 end
 
 function Gelato6()
@@ -270,32 +356,52 @@ function isPinnaEnterable()
     end
 end
 
+function Pinna1()
+    return true
+end
+
 function Pinna2()
-    return spray()
+    if has("OpenEpisodes") then
+        return true
+    else
+        return spray()
+    end
 end
 
 function Pinna3()
-    return spray() and hover()
+    return Pinna2()
 end
 
 function Pinna4()
-    return Pinna3()
+    if has("OpenEpisodes") then
+        return true
+    elseif has("HardLogic") then
+        return spray()
+    else
+        return sprover()
+    end
 end
 
 function Pinna5()
-    return Pinna3()
+    return Pinna4()
 end
 
 function Pinna6()
-    return spray() and hover() and yoshi()
+    return Pinna4()
 end
 
 function Pinna7()
-    return Pinna6()
+    if has("OpenEpisodes") then
+        return true
+    elseif has("HardLogic") then
+        return spray() and yoshi()
+    else
+        return sprover() and yoshi()
+    end
 end
 
 function Pinna8()
-    return Pinna6()
+    return Pinna7()
 end
 
 --Sirena
@@ -304,36 +410,66 @@ function isSirenaEnterable()
     if has("progression") == has("progression_ticket") then
         return has("sirena")
     elseif has("progression") == has("progression_vanilla") then
-        return has("yoshi")
+        return has("yoshi") and shines() >= 5
     end
 end
 
+function Sirena1()
+    return true
+end
+
 function Sirena2()
-    return spray()
+    if has("OpenEpisodes") then
+        return true
+    elseif has("SaltyLogic") then
+        return splasher() or turbo()
+    elseif has("HardLogic") then
+        return splasher()
+    else
+        return sprover()
+    end
 end
 
 function Sirena3()
-    return Sirena2()
+    if has("OpenEpisodes") then
+        return true
+    elseif has("HardLogic") then
+        return splasher()
+    else
+        return sprover()
+    end
 end
 
 function Sirena4()
-    return spray() and hover() and yoshi()
+    if has("OpenEpisodes") then
+        return true
+    elseif has("HardLogic") then
+        return splasher() and yoshi()
+    else
+        return sprover() and yoshi()
+    end
 end
 
 function Sirena5()
-    return Sirena4()
+    if has("OpenEpisodes") then
+        return true
+    elseif has("HardLogic") then
+        return spray() and yoshi()
+    else
+        return sprover() and yoshi()
+    end
 end
 
 function Sirena6()
-    return Sirena4()
+    return Sirena5()
 end
 
 function Sirena7()
-    return Sirena4()
+    return Sirena5()
 end
 
 function Sirena8()
-    return Sirena4()
+    return Sirena5()
 end
 
 --Noki
@@ -346,8 +482,18 @@ function isNokiEnterable()
     end
 end
 
+function Noki1()
+    return true
+end
+
 function Noki2()
-    return spray() and hover()
+    if has("OpenEpisodes") then
+        return true
+    elseif has("HardLogic") then
+        return splasher()
+    else
+        return sprover()
+    end
 end
 
 function Noki3()
@@ -371,7 +517,15 @@ function Noki7()
 end
 
 function Noki8()
-    return Noki2()
+    if has("OpenEpisodes") then
+        return true
+    elseif has("AdvancedLogic") then
+        return splasher()
+    elseif has("HardLogic") then
+        return spray()
+    else
+        return sprover()
+    end
 end
 
 -- Pianta
@@ -384,8 +538,18 @@ function isPiantaEnterable()
     end
 end
 
+function Pianta1()
+    return true
+end
+
 function Pianta2()
-    return splasher()
+    if has("OpenEpisodes") then
+        return true
+    elseif has("HardLogic") then
+        return splasher() or turbo()
+    else
+        return splasher()
+    end
 end
 
 function Pianta3()
@@ -393,15 +557,39 @@ function Pianta3()
 end
 
 function Pianta4()
-    return hover()
+    if has("OpenEpisodes") then
+        return true
+    elseif has("SaltyLogic") then
+        return splasher() or turbo()
+    elseif has("HardLogic") then
+        return sprocket() or hover() or turbo()
+    else
+        return sprocket() or hover()
+    end
 end
 
 function Pianta5()
-    return Pianta4()
+    if has("OpenEpisodes") then
+        return true
+    elseif has("SaltyLogic") then
+        return splasher() or turbo()
+    elseif has("HardLogic") then
+        return sprocket() or hover() or turbo()
+    else
+        return sprocket()
+    end
 end
 
 function Pianta6()
-    return hover() and yoshi()
+    if has("OpenEpisodes") then
+        return true
+    elseif has("AdvancedLogic") then
+        return hover() or yoshi()
+    elseif has("HardLogic") then
+        return (sprocket() or hover() or turbo()) and yoshi()
+    else
+        return sprocket() and yoshi()
+    end
 end
 
 function Pianta7()
@@ -409,7 +597,15 @@ function Pianta7()
 end
 
 function Pianta8()
-    return hover() and yoshi() and spray()
+    if has("OpenEpisodes") then
+        return true
+    elseif has("AdvancedLogic") then
+        return splasher() or (yoshi() and spray())
+    elseif has("HardLogic") then
+        return (rocket() or hover() or turbo()) and yoshi() and spray()
+    else
+        return sprocket() and yoshi()
+    end
 end
 
 -- Boathouse
