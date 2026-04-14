@@ -10,8 +10,9 @@
                 "item_margin": "1.5, 1.5",
                 "h_alignment": "center",
                 "rows": [
-                    ["progression", "coin_shines_enabled", "blues", "nozzlestart"],
-                    ["coronashines", "boat_maximum", "LogicDisplay", "OpenAllEpisodes"],
+                    ["progression", "OpenAllEpisodes", "LogicDisplay"],
+                    ["coin_shines_enabled", "blues"],
+                    ["coronashines", "boat_maximum","nozzlestart"],
                     ["automap"]
                 ]
             }
