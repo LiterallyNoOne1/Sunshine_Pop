@@ -9,7 +9,8 @@
       {
         "name": "Turbo Pillar",
         "access_rules": [
-          "$turbo"
+          "$StandardLogic, $turbo",
+          "^$AdvancedLogic, $height"
         ],
         "sections": [
           {
@@ -29,9 +30,10 @@
       {
         "name": "Burning Pianta",
         "access_rules": [
-          "$splasher",
-          "OoLMovement, ^$canReachWithTurbo",
-          "OoLMovement, ^$canReachWithYoshi"
+          "$StandardLogic, $splasher", 
+          "$StandardLogic, $yoshi, $skipforward",
+          "^$HardLogic, $turbo",
+          "^$SaltyLogic, $fluddless, $skipforward"
         ],
         "sections": [
           {
@@ -51,9 +53,9 @@
       {
         "name": "Shine Gate M",
         "access_rules": [
-          "$splasher",
-          "OoLMovement, ^$canReachWithTurbo",
-          "OoLMovement, ^$canReachWithYoshi"
+          "$StandardLogic, $splasher",
+          "$StandardLogic, $yoshi, $skipforward",
+          "^$HardLogic, $turbo"
         ],
         "sections": [
           {
@@ -73,9 +75,8 @@
       {
         "name": "Tower M",
         "access_rules": [
-          "$splasher",
-          "OoLMovement, ^$canReachWithTurbo",
-          "OoLMovement, ^$canReachWithYoshi"
+          "$StandardLogic, $splasher",
+          "$StandardLogic, $yoshi, $skipforward"
         ],
         "sections": [
           {
@@ -95,9 +96,9 @@
       {
         "name": "Chuckster Room M",
         "access_rules": [
-          "$splasher",
-          "OoLMovement, ^$canReachWithTurbo",
-          "OoLMovement, ^$canReachWithYoshi"
+          "$StandardLogic, $splasher",
+          "$StandardLogic, $yoshi, $skipforward",
+          "^$HardLogic, $turbo"
         ],
         "sections": [
           {
@@ -137,8 +138,11 @@
       {
         "name": "Tower Yellow Goo",
         "access_rules": [
-          "yoshi",
-          "OoLGlitches, ^$canReachWithHover"
+          "$StandardLogic, $yoshi, $splasher, shine:5, progression_vanilla",
+          "$StandardLogic, $yoshi, $skipforward",
+          "^$AdvancedLogic, $hover",
+          "^$AdvancedLogic, $yoshi, $spray, shine:5, progression_vanilla",
+          "^$AdvancedLogic, $hover, $skipforward"
         ],
         "sections": [
           {
@@ -158,8 +162,7 @@
       {
         "name": "Jail Cell",
         "access_rules": [
-          "$hover",
-          "OoLMovement, ^$canReachFluddless"
+          ""
         ],
         "sections": [
           {
@@ -179,9 +182,10 @@
       {
         "name": "Police Station Yellow Goo",
         "access_rules": [
-          "yoshi",
-          "OoLGlitches, ^$canReachWithHover",
-          "OoLGlitches, ^$canReachWithRocket"
+          "$StandardLogic, $yoshi, $splasher, shine:5, progression_vanilla",
+          "$StandardLogic, $yoshi, $skipforward",
+          "^$SaltyLogic, $height",
+          "^$SaltyLogic, $height, $skipforward"
         ],
         "sections": [
           {
@@ -241,8 +245,12 @@
       {
         "name": "Blue Bird Near Sirena Pipe",
         "access_rules": [
-          "$spray", "yoshi",
-          "OoLMovement, ^$canReachWithTurbo"
+          "$StandardLogic, $spray",
+          "$StandardLogic, $squirter, $skipforward",
+          "^$AdvancedLogic, $splasher",
+          "^$AdvancedLogic, $anysplasher, $skipforward",
+          "^$SaltyLogic, $splasherturbo",
+          "^$SaltyLogic, $anysplasherturbo, $skipforward"
         ],
         "sections": [
           {
@@ -262,8 +270,12 @@
       {
         "name": "Blue Bird Near Crate Guy",
         "access_rules": [
-          "$spray", "yoshi",
-          "OoLMovement, ^$canReachWithTurbo"
+          "$StandardLogic, $spray",
+          "$StandardLogic, $squirter, $skipforward",
+          "^$AdvancedLogic, $splasher",
+          "^$AdvancedLogic, $anysplasher, $skipforward",
+          "^$SaltyLogic, $splasherturbo",
+          "^$SaltyLogic, $anysplasherturbo, $skipforward"
         ],
         "sections": [
           {
@@ -283,9 +295,10 @@
       {
         "name": "Statue X",
         "access_rules": [
-          "$splasher",
-          "OoLMovement, ^$canReachWithYoshi",
-          "OoLMovement, ^$canReachWithTurbo"
+          "$StandardLogic, $splasher",
+          "$StandardLogic, $anysplasher, $skipforward",
+          "^$HardLogic, $splasherturbo",
+          "^$HardLogic, $anysplasherturbo, $skipforward"
         ],
         "sections": [
           {
@@ -305,9 +318,10 @@
       {
         "name": "Bell Tower X",
         "access_rules": [
-          "$splasher",
-          "OoLMovement, ^$canReachWithYoshi",
-          "OoLMovement, ^$canReachWithTurbo"
+          "$StandardLogic, $splasher",
+          "$StandardLogic, $anysplasher, $skipforward",
+          "^$HardLogic, $splasherturbo",
+          "^$HardLogic, $anysplasherturbo, $skipforward"
         ],
         "sections": [
           {
@@ -327,7 +341,9 @@
       {
         "name": "Pineapple Basket",
         "access_rules": [
-          ""
+          "$StandardLogic, $splasher",
+          "$StandardLogic, $skipforward",
+          "^$HardLogic, $splasherturbo"
         ],
         "sections": [
           {
@@ -347,7 +363,9 @@
       {
         "name": "Durian Basket",
         "access_rules": [
-          ""
+          "$StandardLogic, $splasher",
+          "$StandardLogic, $skipforward",
+          "^$HardLogic, $splasherturbo"
         ],
         "sections": [
           {
@@ -367,7 +385,9 @@
       {
         "name": "Banana Basket",
         "access_rules": [
-          ""
+          "$StandardLogic, $splasher",
+          "$StandardLogic, $skipforward",
+          "^$HardLogic, $splasherturbo"
         ],
         "sections": [
           {
@@ -387,8 +407,9 @@
       {
         "name": "Coconut Basket",
         "access_rules": [
-          "$splasher",
-          "OoLMovement, ^$canReachFluddless"
+          "$StandardLogic, $splasher",
+          "$StandardLogic, $skipforward",
+          "^$HardLogic, $splasherturbo"
         ],
         "sections": [
           {

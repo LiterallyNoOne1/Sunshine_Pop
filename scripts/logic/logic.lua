@@ -27,7 +27,9 @@ levelaccess = Tracker:FindObjectForCode("progression")
 bluecoinsenabled = Tracker:FindObjectForCode("blue_coin_sanity")
 coin_shine_enabled = Tracker:FindObjectForCode("coin_shine_enabled")
 
--- Shine Counter
+
+----Shine Counter
+
 function shines()
     return Tracker:ProviderCountForCode("shine")
 end
@@ -49,7 +51,9 @@ function hascoronashines()
     end
 end
 
--- Moves
+
+----Nozzles / Moves
+
 function spray()
     return has("fludd")
 end
@@ -70,39 +74,66 @@ function yoshi()
     return has("yoshi")
 end
 
--- General Items
 
+----Movement Combos
+-- (NO FLUDD)
 function fluddless()
     return true
 end
 
+-- (ANY FLUDD)
+function anyfludd()
+    return has("fludd") or has("hover") or has("rocket") or has("turbo")
+end
+
+-- (spray OR hover)
 function splasher()
     return has("fludd") or has("hover")
 end
 
+-- (SPLASHER (spray or hover) OR yoshi)
+function anysplasher()
+    return has("fludd") or has("hover") or has("yoshi")
+end
+
+-- (SPLASHER (spray or hover) OR turbo)
+function splasherturbo()
+    return has("fludd") or has("hover") or has("turbo")
+end
+
+-- (ANY_SPLASHER (spray or hover or yoshi) OR turbo)
+function anysplasherturbo()
+    return has("fludd") or has("hover") or has("turbo") or has("yoshi")
+end
+
+-- (hover OR rocket)
 function height()
     return has("hover") or has("rocket")
 end
 
+-- (spray OR turbo)
 function speed()
     return has("fludd") or has("turbo")
 end
 
+-- (spray OR yoshi)
 function squirter()
     return has("fludd") or has("yoshi")
 end
 
+-- (spray + rocket)
 function sprocket()
     return has("fludd") and has("rocket")
 end
 
+-- (spray + hover)
 function sprover()
     return has("fludd") and has("hover")
 end
 
-function anyfludd()
-    return has("fludd") or has("hover") or has("rocket") or has("turbo")
-end
+
+
+----Intro Skips
 
 function skipintro()
     return has("nozzlefluddless")
@@ -112,7 +143,8 @@ function skipforward()
     return has("nozzlefluddless") or has("progression_ticket")
 end
 
----Difficulty Settings Logic
+----Difficulty Settings Logic
+
 function StandardLogic()
     if has("StandardLogic") then
         return true
