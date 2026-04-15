@@ -131,7 +131,15 @@ function sprover()
     return has("fludd") and has("hover")
 end
 
+-- (spray + turbo)
+function spurbo()
+    return has("fludd") and has("turbo")
+end
 
+-- (hover + turbo)
+function hovurbo()
+    return has("hover") and has("turbo")
+end
 
 ----Intro Skips
 

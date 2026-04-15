@@ -139,7 +139,7 @@
         "name": "Tower Yellow Goo",
         "access_rules": [
           "$StandardLogic, $yoshi, $splasher, shine:5, progression_vanilla",
-          "$StandardLogic, $yoshi, $skipforward",
+          "$StandardLogic, $skipforward",
           "^$AdvancedLogic, $hover",
           "^$AdvancedLogic, $yoshi, $spray, shine:5, progression_vanilla",
           "^$AdvancedLogic, $hover, $skipforward"
@@ -429,8 +429,9 @@
       {
         "name": "Ice Cube",
         "access_rules": [
-          "$iscoronaenterable, $turbo, $spray",
-          "$iscoronaenterable, OoLMovement, ^$canReachWithTurbo"
+          "$StandardLogic, $iscoronaenterable, $spurbo",
+          "$StandardLogic, $iscoronaenterable, $hovurbo",
+          "^$HardLogic, $iscoronaenterable, $turbo"
         ],
         "sections": [
           {
