@@ -211,7 +211,7 @@
             "name": "Clean the East Bell",
             "access_rules": [
               "$StandardLogic, $rocket, $splasher",
-              "$StandardLogic, $rocket $yoshi, $skipforward",
+              "$StandardLogic, $rocket, $yoshi, $skipforward",
               "^$HardLogic, $yoshi, $skipforward",
               "^$AdvancedLogic, $spray, $turbo"
             ],
@@ -2290,6 +2290,31 @@
             "y": 430
           }
         ]
+      },
+      {
+        "name": "Village Underside",
+        "sections": [
+          {
+            "name": "Secret of The Village Underside",
+            "ref": "Pianta Village/Episode 5/Secret of the Village Underside"
+          },
+          {
+            "name": "Red Coin Chucksters",
+            "ref": "Pianta Village/Episode 5/Red Coin Chucksters"
+          },
+          {
+            "name": "Underside M",
+            "ref": "Pianta Village Blue Coins/Underside M/Blue Coin"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Pianta Village",
+            "x": 1435,
+            "y": 1756,
+            "size": 40
+          }
+        ]
       }
     ]
   },
@@ -2308,7 +2333,7 @@
             "name": "Father and Son Shine!",
             "access_rules": [
               "$StandardLogic, $sprover, $rocket",
-              "^$HardLogic, $splasher, $rocket",
+              "^$HardLogic, $spray, $rocket",
               "^$AdvancedLogic, $turbo, $rocket"
             ],
             "item_count": 1
