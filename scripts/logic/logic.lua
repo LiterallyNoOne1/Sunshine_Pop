@@ -162,6 +162,8 @@ end
 function HardLogic()
     if has("HardLogic") then
         return AccessibilityLevel.Normal
+    elseif has("OoLDisplay_off") then
+        return AccessibilityLevel.None
     elseif has("StandardLogic") then
         return AccessibilityLevel.SequenceBreak
     end
@@ -170,6 +172,8 @@ end
 function AdvancedLogic()
     if has("AdvancedLogic") then
         return AccessibilityLevel.Normal
+    elseif has("OoLDisplay_off") then
+        return AccessibilityLevel.None
     elseif has("HardLogic") then
         return AccessibilityLevel.SequenceBreak
     end
@@ -178,6 +182,8 @@ end
 function SaltyLogic()
     if has("SaltyLogic") then
         return AccessibilityLevel.Normal
+    elseif has("OoLDisplay_off") then
+        return AccessibilityLevel.None
     elseif has("AdvancedLogic") then
         return AccessibilityLevel.SequenceBreak
     end

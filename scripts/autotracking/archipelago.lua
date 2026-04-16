@@ -121,6 +121,11 @@ function onClear(slot_data)
         OpenShines.CurrentStage = (slot_data['AllShinesSelectable'])
     end
 
+    if slot_data['nozzle_boxes'] then
+        local NozBox = Tracker:FindObjectForCode('nozzle_box_enabled')
+        NozBox.Active = (slot_data['nozzle_boxes'])
+    end
+
     if Archipelago.PlayerNumber > -1 then
         print("SUCCESS?")
         cur_stage = "sms_map_"..TEAM_NUMBER.."_"..PLAYER_ID

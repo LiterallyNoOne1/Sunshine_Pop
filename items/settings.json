@@ -246,5 +246,52 @@
                 "inherit_codes": false
             }
         ]
+    },
+    {
+        "name": "Nozzle Boxes",
+        "type": "toggle",
+        "img": "images/settings/nozzleboxes.png",
+        "codes": "nozzle_box_enabled"
+    },
+    {
+        "name": "AutoEpisode Switching",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "img": "images/settings/autoEpisode_on.png",
+                "name": "AutoEpisode On",
+                "codes": "autoepisode,autoEpisode_on",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/settings/autoEpisode_off.png",
+                "name": "AutoEpisode Off",
+                "codes": "autoepisode,autoEpisode_off",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "SequenceBreak Logic Diplay",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "codes": "OoLDisplay",
+        "stages": [
+            {
+                "img": "images/settings/OoLDisplayEnabled.png",
+                "name": "Display one difficulty above in yellow",
+                "codes": "OoLDisplay_on",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/settings/OoLDisplayDisabled.png",
+                "name": "Show only current difficulty tier",
+                "codes": "OoLDisplay_off",
+                "inheret_codes": false
+            }
+        ]
     }
 ]

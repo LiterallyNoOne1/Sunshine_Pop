@@ -134,6 +134,10 @@
                     {
                         "name": "Windmill Bridge Mesh Underside",
                         "ref": "Bianco Hills Blue Coins/Bridge Underside/Blue Coin"
+                    },
+                    {
+                        "name": "Rocket Box",
+                        "ref": "Rocket Nozzle Boxes/Bianco Hills/Rocket Box (Bianco)/Rocket Box (Bianco)"
                     }
                 ],
                 "map_locations": [
@@ -188,6 +192,10 @@
                     {
                         "name": "In the Air by Chuckster Momma",
                         "ref": "Bianco Hills Blue Coins/Chuckster Momma/Blue Coin"
+                    },
+                    {
+                        "name": "Turbo Box",
+                        "ref": "Turbo Nozzle Boxes/Bianco Hills/Turbo Box (Bianco)/Turbo Box (Bianco)"
                     }
                 ],
                 "map_locations": [
@@ -424,6 +432,10 @@
                     {
                         "name": "In the Air Above Ricco Tower",
                         "ref": "Ricco Harbor Blue Coins/Tower Rocket/Blue Coin"
+                    },
+                    {
+                        "name": "Rocket Box",
+                        "ref": "Rocket Nozzle Boxes/Ricco Harbor/Rocket Box (Ricco)/Rocket Box (Ricco)"
                     }
                 ],
                 "map_locations": [
@@ -469,6 +481,10 @@
                 "sections": [
                     {
                         "ref": "Ricco Harbor/Episode 7/Shadow Mario Revisited"
+                    },
+                    {
+                        "name": "Turbo Box",
+                        "ref": "Turbo Nozzle Boxes/Ricco Harbor/Turbo Box (Ricco)/Turbo Box (Ricco)"
                     }
                 ],
                 "map_locations": [
@@ -678,6 +694,10 @@
                     {
                         "name": "Sand Bird D",
                         "ref": "Gelato Beach Blue Coins/Sand Bird D/Blue Coin"
+                    },
+                    {
+                        "name": "Turbo Box",
+                        "ref": "Turbo Nozzle Boxes/Gelato Beach/Turbo Box (Gelato)/Turbo Box (Gelato)"
                     }
                 ],
                 "map_locations": [
@@ -693,6 +713,10 @@
                 "sections": [
                     {
                         "ref": "Gelato Beach/Episode 5/Il Piantissimo's Sand Sprint"
+                    },
+                    {
+                        "name": "Rocket Box",
+                        "ref": "Rocket Nozzle Boxes/Gelato Beach/Rocket Box (Gelato)/Rocket Box (Gelato)"
                     }
                 ],
                 "map_locations": [
@@ -1379,6 +1403,10 @@
                     {
                         "name": "Alcove Above Rocket Nozzle Box",
                         "ref": "Noki Bay Blue Coins/Rocket Alcove/Blue Coin"
+                    },
+                    {
+                        "name": "Rocket Box",
+                        "ref": "Rocket Nozzle Boxes/Noki Bay/Rocket Box (Noki)/Rocket Box (Noki)"
                     }
                 ],
                 "map_locations": [
@@ -1518,6 +1546,10 @@
                     {
                         "name": "Alcove by Conch Shell",
                         "ref": "Noki Bay Blue Coins/Shell Alcove/Blue Coin"
+                    },
+                    {
+                        "name": "Turbo Box",
+                        "ref": "Turbo Nozzle Boxes/Noki Bay/Turbo Box (Noki)/Turbo Box (Noki)"
                     }
                 ],
                 "map_locations": [
@@ -1854,6 +1886,10 @@
                     {
                         "name": "Blue Bird",
                         "ref": "Pianta Village Blue Coins/Blue Bird/Blue Coin"
+                    },
+                    {
+                        "name": "Rocket Box",
+                        "ref": "Rocket Nozzle Boxes/Pianta Village/Rocket Box (Pianta)/Rocket Box (Pianta)"
                     }
                 ],
                 "map_locations": [
