@@ -101,7 +101,7 @@ function onClear(slot_data)
         ticketing.CurrentStage = (slot_data['level_access'])
     end
 
-    if slot_data['enabled_coin_shines'] then
+    if slot_data['enable_coin_shines'] then
         local coinsanity = Tracker:FindObjectForCode("coin_shines_enabled")
         coinsanity.Active = (slot_data['enabled_coin_shines'])
     end
