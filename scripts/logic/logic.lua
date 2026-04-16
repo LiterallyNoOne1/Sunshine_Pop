@@ -224,7 +224,7 @@ function Bianco2()
     if has("OpenEpisodes") then
         return true
     elseif has("AdvancedLogic") then
-        return splasher() or turbo()
+        return splasherturbo()
     elseif has("HardLogic") then
         return splasher()
     else
@@ -235,8 +235,8 @@ end
 function Bianco3()
     if has("OpenEpisodes") then
         return true
-    elseif has("AdvancedLogic") then
-        return splasher() or turbo()
+    elseif has("SaltyLogic") then
+        return splasherturbo()
     elseif has("HardLogic") then
         return splasher()
     else
