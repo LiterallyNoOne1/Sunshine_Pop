@@ -297,7 +297,7 @@ function Ricco2()
 end
 
 function Ricco3()
-    return Ricco2
+    return Ricco2()
 end
 
 function Ricco4()
@@ -547,31 +547,35 @@ function Noki3()
 end
 
 function Noki4()
-    return Noki2()
-end
-
-function Noki5()
-    return Noki2()
-end
-
-function Noki6()
-    return Noki2()
-end
-
-function Noki7()
-    return Noki2()
-end
-
-function Noki8()
     if has("OpenEpisodes") then
         return true
-    elseif has("AdvancedLogic") then
-        return splasher()
     elseif has("HardLogic") then
-        return spray()
+        return hover()
     else
         return sprover()
     end
+end
+
+function Noki5()
+    if has("OpenEpisodes") then
+        return true
+    elseif has("SaltyLogic") then
+        return hover()
+    else
+        return sprover()
+    end
+end
+
+function Noki6()
+    return Noki5()
+end
+
+function Noki7()
+    return Noki5()
+end
+
+function Noki8()
+    return Noki5()
 end
 
 -- Pianta

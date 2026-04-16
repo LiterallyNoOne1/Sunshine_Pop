@@ -565,7 +565,7 @@
               "name": "Underwater Right",
               "visibility_rules":["$allEpisodes"],
               "access_rules": [
-                "Bianco1"
+                "$Bianco1"
               ],
               "sections": [
                 {
@@ -716,7 +716,7 @@
               "name": "River End",
               "visibility_rules":["$allEpisodes"],
               "access_rules": [
-                "Bianco1"
+                "$Bianco1"
               ],
               "sections": [
                 {
@@ -1639,7 +1639,7 @@
         "name": "Tower Crate",
         "visibility_rules":["$allEpisodes"],
         "access_rules": [
-          "Ricco1"
+          "$Ricco1"
         ],
         "sections": [
           {
@@ -2005,7 +2005,7 @@
         "name": "Juicer",
         "visibility_rules":["$allEpisodes"],
         "access_rules": [
-          "Gelato1"
+          "$Gelato1"
         ],
         "sections": [
           {
@@ -2206,7 +2206,7 @@
         "name": "Deck",
         "visibility_rules":["$allEpisodes"],
         "access_rules": [
-          "Gelato1"
+          "$Gelato1"
         ],
         "sections": [
           {
@@ -2252,7 +2252,7 @@
         "name": "Big Tree",
         "visibility_rules":["$allEpisodes"],
         "access_rules": [
-          "Gelato1"
+          "$Gelato1"
         ],
         "sections": [
           {
@@ -2273,7 +2273,7 @@
         "name": "Crevice",
         "visibility_rules":["$allEpisodes"],
         "access_rules": [
-          "Gelato1"
+          "$Gelato1"
         ],
         "sections": [
           {
@@ -2294,7 +2294,7 @@
         "name": "Sand Cabana Roof",
         "visibility_rules":["$allEpisodes"],
         "access_rules": [
-          "Gelato1"
+          "$Gelato1"
         ],
         "sections": [
           {
@@ -2466,7 +2466,7 @@
         "name": "Close Underwater",
         "visibility_rules":["episode1", "episode2", "episode3", "episode4", "episode6", "episode7", "episode8", "allepisodes"],
         "access_rules": [
-          "Gelato1"
+          "$Gelato1"
         ],
         "sections": [
           {
@@ -2487,7 +2487,7 @@
         "name": "Far Underwater",
         "visibility_rules":["episode1", "episode2", "episode3", "episode4", "episode6", "episode7", "episode8", "allepisodes"],
         "access_rules": [
-          "Gelato1"
+          "$Gelato1"
         ],
         "sections": [
           {
@@ -3206,7 +3206,7 @@
         "name": "Coaster Ledge",
         "visibility_rules":["episode1", "episode3", "episode5", "episode6", "episode7", "episode8", "allepisodes"],
         "access_rules": [
-          "Pinna1"
+          "$Pinna1"
         ],
         "sections": [
           {
@@ -3485,7 +3485,7 @@
         "name": "Ocean",
         "visibility_rules":["$allEpisodes"],
         "access_rules": [
-          "Sirena1"
+          "$Sirena1"
         ],
         "sections": [
           {
@@ -3611,7 +3611,7 @@
           {
             "name": "Blue Coin",
             "access_rules":[
-              "$StandardLogic, height",
+              "$StandardLogic, $height",
               "^$HardLogic, $turbo",
               "^$SaltyLogic, $fluddless"
             ],
@@ -3682,7 +3682,7 @@
         "name": "Episode 1 Male Noki",
         "visibility_rules":["episode1", "episode6", "allepisodes"],
         "access_rules": [
-          "Sirena1"
+          "$Sirena1"
         ],
         "sections": [
           {
@@ -4729,7 +4729,7 @@
         "name": "Underwater",
         "visibility_rules":["$allEpisodes"],
         "access_rules": [
-          "Noki1"
+          "$Noki1"
         ],
         "sections": [
           {
@@ -5042,7 +5042,7 @@
         "name": "Grass",
         "visibility_rules":["$allEpisodes"],
         "access_rules": [
-          "Pianta1"
+          "$Pianta1"
         ],
         "sections": [
           {
@@ -5214,7 +5214,7 @@
         "name": "Statue's Nose",
         "visibility_rules":["episode1", "episode3", "episode5", "episode7", "allepisodes"],
         "access_rules": [
-          "Pianta1"
+          "$Pianta1"
         ],
         "sections": [
           {
@@ -5310,7 +5310,7 @@
         "name": "River End",
         "visibility_rules":["$allEpisodes"],
         "access_rules": [
-          "Pianta1"
+          "$Pianta1"
         ],
         "sections": [
           {

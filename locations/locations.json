@@ -2167,7 +2167,7 @@
           {
             "name": "Red Coin Chucksters",
             "access_rules":[
-              "$StandardLogic, $yoshi. $hover",
+              "$StandardLogic, $yoshi, $hover",
               "^$AdvancedLogic, $hover",
               "^$SaltyLogic, $yoshi"
             ],
