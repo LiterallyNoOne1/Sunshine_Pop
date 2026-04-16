@@ -139,10 +139,8 @@
         "name": "Tower Yellow Goo",
         "access_rules": [
           "$StandardLogic, $yoshi, $splasher, shine:5, progression_vanilla",
-          "$StandardLogic, $skipforward",
-          "^$AdvancedLogic, $hover",
-          "^$AdvancedLogic, $yoshi, $spray, shine:5, progression_vanilla",
-          "^$AdvancedLogic, $hover, $skipforward"
+          "$StandardLogic, $yoshi, $skipforward",
+          "^$AdvancedLogic, $hover"
         ],
         "sections": [
           {
@@ -184,8 +182,7 @@
         "access_rules": [
           "$StandardLogic, $yoshi, $splasher, shine:5, progression_vanilla",
           "$StandardLogic, $yoshi, $skipforward",
-          "^$SaltyLogic, $height",
-          "^$SaltyLogic, $height, $skipforward"
+          "^$SaltyLogic, $height"
         ],
         "sections": [
           {
@@ -246,11 +243,9 @@
         "name": "Blue Bird Near Sirena Pipe",
         "access_rules": [
           "$StandardLogic, $spray",
-          "$StandardLogic, $squirter, $skipforward",
-          "^$AdvancedLogic, $splasher",
-          "^$AdvancedLogic, $anysplasher, $skipforward",
-          "^$SaltyLogic, $splasherturbo",
-          "^$SaltyLogic, $anysplasherturbo, $skipforward"
+          "$StandardLogic, $yoshi, $skipforward",
+          "^$AdvancedLogic, $hover",
+          "^$SaltyLogic, $turbo"
         ],
         "sections": [
           {
