@@ -244,7 +244,11 @@
             {
                 "name": "Pianta Village 100 Coins",
                 "access_rules": [
-                    "$isPiantaEnterable"
+                    "$isPiantaEnterable, $StandardLogic, $rocket",
+                    "$isPiantaEnterable, ^$HardLogic, $yoshi, shine:5, vanilla_progression",
+                    "$isPiantaEnterable, ^$HardLogic, $yoshi, $skipfoward",
+                    "$isPiantaEnterable, ^$AdvancedLogic, $hover",
+                    "$isPiantaEnterable, ^$SaltyLogic, $fluddless"
                 ],
                 "children": [
                     {
