@@ -491,7 +491,7 @@
               "sections": [
                 {
                   "name": "Blue Coin",
-                  "Access_rules":[
+                  "access_rules":[
                     "$StandardLogic, $height",
                     "$StandardLogic, $spray",
                     "$StandardLogic, $yoshi, $Bianco8",
