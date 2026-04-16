@@ -456,13 +456,17 @@
               "name": "Windmill M",
               "visibility_rules":["$allEpisodes"],
               "access_rules": [
-                "$hover",
-                "OoLMovement, ^$canReachWithSpray",
-                "OoLMovement, ^$canReachWithTurbo"
+                "$Bianco1"
               ],
               "sections": [
                 {
                   "name": "Blue Coin",
+                  "access_rules":[
+                    "$StandardLogic, $hover",
+                    "$StandardLogic, $yoshi, $Bianco8",
+                    "^$HardLogic, $spray",
+                    "^$AdvancedLogic, $$turbo"
+                  ],
                   "item_count": 1
                 }
               ],
@@ -479,12 +483,17 @@
               "name": "Windmill Pillar",
               "visibility_rules":["$allEpisodes"],
               "access_rules": [
-                "$splasher",
-                "OoLMovement, ^$canReachWithTurbo"
+                "$Bianco1"
               ],
               "sections": [
                 {
                   "name": "Blue Coin",
+                  "Access_rules":[
+                    "$StandardLogic, $height",
+                    "$StandardLogic, $spray",
+                    "$StandardLogic, $yoshi, $Bianco8",
+                    "^$AdvancedLogic, $turbo"
+                  ],
                   "item_count": 1
                 }
               ],
@@ -501,12 +510,16 @@
               "name": "Towers House M",
               "visibility_rules":["$allEpisodes"],
               "access_rules": [
-                "$splasher",
-                "OoLMovement, ^$canReachWithTurbo"
+                "$Bianco1"
               ],
               "sections": [
                 {
                   "name": "Blue Coin",
+                  "access_rules":[
+                    "$StandardLogic, $splasher",
+                    "$StandardLogic, $yoshi, $Bianco8",
+                    "^$HardLogic, $turbo"
+                  ],
                   "item_count": 1
                 }
               ],
@@ -523,13 +536,16 @@
               "name": "Balcony",
               "visibility_rules":["$allEpisodes"],
               "access_rules": [
-                "$hover",
-                "OoLMovement, ^$canReachWithSpray",
-                "OoLMovement, ^$canReachWithTurbo"
+                "$Bianco1"
               ],
               "sections": [
                 {
                   "name": "Blue Coin",
+                  "access_rules"[
+                    "$StandardLogic, $hover",
+                    "$StandardLogic, $yoshi, $Bianco8",
+                    "^$HardLogic, $anyfludd"
+                  ],
                   "item_count": 1
                 }
               ],
@@ -546,7 +562,7 @@
               "name": "Underwater Right",
               "visibility_rules":["$allEpisodes"],
               "access_rules": [
-                ""
+                "Bianco1"
               ],
               "sections": [
                 {
@@ -567,12 +583,16 @@
               "name": "Wall Side M",
               "visibility_rules":["$allEpisodes"],
               "access_rules": [
-                "$splasher",
-                "OoLMovement, ^$canReachWithTurbo"
+                "$Bianco1"
               ],
               "sections": [
                 {
                   "name": "Blue Coin",
+                  "access_rules":[
+                    "$StandardLogic, $splasher",
+                    "$StandardLogic, $yoshi, $Bianco8",
+                    "^$AdvancedLogic, $turbo"
+                  ],
                   "item_count": 1
                 }
               ],
@@ -589,12 +609,16 @@
               "name": "Wall Top M",
               "visibility_rules":["$allEpisodes"],
               "access_rules": [
-                "$splasher",
-                "OoLMovement, ^$canReachWithTurbo"
+                "$Bianco1"
               ],
               "sections": [
                 {
                   "name": "Blue Coin",
+                  "access_rules":[
+                    "$StandardLogic, $splasher",
+                    "$StandardLogic, $yoshi, $Bianco8",
+                    "^$HardLogic, $turbo"
+                  ],
                   "item_count": 1
                 }
               ],
@@ -611,12 +635,16 @@
               "name": "Towers House",
               "visibility_rules":["$allEpisodes"],
               "access_rules": [
-                "$hover",
-                "OoLMovement, ^$canReachFluddless"
+                "$Bianco1"
               ],
               "sections": [
                 {
                   "name": "Blue Coin",
+                  "access_rules":[
+                    "$StandardLogic, $height",
+                    "$StandardLogic, $yoshi, $Bianco8",
+                    "^$HardLogic, $fluddless"
+                  ],
                   "item_count": 1
                 }
               ],
@@ -633,12 +661,16 @@
               "name": "Pinwheel",
               "visibility_rules":["$allEpisodes"],
               "access_rules": [
-                "$splasher",
-                "OoLMovement, ^$canReachWithTurbo"
+                "$Bianco1"
               ],
               "sections": [
                 {
                   "name": "Blue Coin",
+                  "access_rules":[
+                    "$StandardLogic, $splasher",
+                    "$StandardLogic, $yoshi, $Bianco8",
+                    "^$HardLogic, $turbo"
+                  ],
                   "item_count": 1
                 }
               ],
@@ -655,12 +687,16 @@
               "name": "X Behind Wall",
               "visibility_rules":["$allEpisodes"],
               "access_rules": [
-                "$splasher",
-                "OoLMovement, ^$canReachWithTurbo"
+                "$Bianco1"
               ],
               "sections": [
                 {
                   "name": "Blue Coin",
+                  "access_rules":[
+                    "$StandardLogic, $splasher",
+                    "$StandardLogic, $yoshi, $Bianco8",
+                    "^$AdvancedLogic, $turbo"
+                  ],
                   "item_count": 1
                 }
               ],
@@ -677,7 +713,7 @@
               "name": "River End",
               "visibility_rules":["$allEpisodes"],
               "access_rules": [
-                ""
+                "Bianco1"
               ],
               "sections": [
                 {
@@ -698,12 +734,16 @@
               "name": "X Between Walls",
               "visibility_rules":["$allEpisodes"],
               "access_rules": [
-                "$splasher",
-                "OoLMovement, ^$canReachWithTurbo"
+                "$Bianco1"
               ],
               "sections": [
                 {
                   "name": "Blue Coin",
+                  "access_rules":[
+                    "$StandardLogic, $splasher",
+                    "$StandardLogic, $yoshi, $Bianco8",
+                    "^$AdvancedLogic, $turbo"
+                  ],
                   "item_count": 1
                 }
               ],
@@ -720,12 +760,16 @@
               "name": "Sail Platform",
               "visibility_rules":["$allEpisodes"],
               "access_rules": [
-                "$hover",
-                "OoLMovement, ^$canReachFluddless"
+                "$Bianco1"
               ],
               "sections": [
                 {
                   "name": "Blue Coin",
+                  "access_rules":[
+                    "$StandardLogic, $hover",
+                    "$StandardLogic, $yoshi, $Bianco8",
+                    "^$HardLogic, $fluddless"
+                  ],
                   "item_count": 1
                 }
               ],
