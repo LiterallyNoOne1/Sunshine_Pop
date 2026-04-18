@@ -234,15 +234,15 @@
         "allow_disabled": false,
         "stages": [
             {
-                "img": "images/settings/OpenEpisodes.png",
-                "name": "All Episodes Open From start",
-                "codes": "OpenAllEpisodes,OpenEpisodes",
-                "inherit_codes": false
-            },
-            {
                 "img": "images/settings/ClosedEpisodes.png",
                 "name": "Vanilla Episode Progression",
                 "codes": "OpenAllEpisodes,ClosedEpisodes",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/settings/OpenEpisodes.png",
+                "name": "All Episodes Open From start",
+                "codes": "OpenAllEpisodes,OpenEpisodes",
                 "inherit_codes": false
             }
         ]

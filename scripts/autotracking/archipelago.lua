@@ -103,7 +103,7 @@ function onClear(slot_data)
 
     if slot_data['enable_coin_shines'] then
         local coinsanity = Tracker:FindObjectForCode("coin_shines_enabled")
-        coinsanity.Active = (slot_data['enabled_coin_shines'])
+        coinsanity.Active = (slot_data['enable_coin_shines'])
     end
 
     if slot_data['trade_shine_maximum'] then
@@ -116,9 +116,9 @@ function onClear(slot_data)
         logicdif.CurrentStage = (slot_data['difficulty'])
     end
 
-    if slot_data['AllShinesSelectable'] then
+    if slot_data['all_shines_selectable'] then
         local OpenShines = Tracker:FindObjectForCode('OpenAllEpisodes')
-        OpenShines.CurrentStage = (slot_data['AllShinesSelectable'])
+        OpenShines.CurrentStage = (slot_data['all_shines_selectable'])
     end
 
     if slot_data['nozzle_boxes'] then
