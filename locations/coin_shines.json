@@ -173,7 +173,9 @@
             {
                 "name": "Sirena Beach 100 Coins",
                 "access_rules": [
-                    "$isSirenaEnterable"
+                    "$isSirenaEnterable",
+                    "^$StandardLogic, $yoshi, $skipintro, progression_vanilla",
+                    "^$AdvancedLogic, $hover, progression_vanilla"
                 ],
                 "children": [
                     {

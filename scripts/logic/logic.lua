@@ -212,7 +212,7 @@ function isBiancoEnterable()
     if has("progression") == has("progression_ticket") then
         return has("bianco")
     elseif has("progression") == has("progression_vanilla") then
-        return splasher()
+        return splasher() or skipintro()
     end
 end
 
@@ -584,7 +584,7 @@ function isPiantaEnterable()
     if has("progression") == has("progression_ticket") then
         return has("pianta")
     elseif has("progression") == has("progression_vanilla") then
-        return shines() >= 10
+        return true
     end
 end
 

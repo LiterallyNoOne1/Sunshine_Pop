@@ -1482,7 +1482,9 @@
     "chest_unopened_img": "images/items/Shine_Sprite.png",
     "chest_opened_img": "images/items/Shine_Sprite_Grey.png",
     "access_rules": [
-      "$isSirenaEnterable"
+      "$isSirenaEnterable",
+      "^$StandardLogic, $yoshi, $skipintro, progression_vanilla",
+      "^$AdvancedLogic, $hover, progression_vanilla"
     ],
     "children": [
       {
@@ -2031,7 +2033,7 @@
     "chest_opened_img": "images/items/Shine_Sprite_Grey.png",
     "access_rules": [
       "$isPiantaEnterable, $StandardLogic, $rocket",
-      "$isPiantaEnterable, ^$HardLogic, $yoshi, shine:5, vanilla_progression",
+      "$isPiantaEnterable, ^$HardLogic, $yoshi, shine:5, progression_vanilla",
       "$isPiantaEnterable, ^$HardLogic, $yoshi, $skipfoward",
       "$isPiantaEnterable, ^$AdvancedLogic, $hover",
       "$isPiantaEnterable, ^$SaltyLogic, $fluddless"

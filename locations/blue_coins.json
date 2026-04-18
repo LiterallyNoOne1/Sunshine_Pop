@@ -3479,7 +3479,11 @@
     "chest_unopened_img": "images/items/Blue_Coin.png",
     "chest_opened_img": "images/items/Blue_Coin_Grey.png",
     "visibility_rules":["blues_on", "blues_boathouse"],
-    "access_rules":["$isSirenaEnterable"],
+    "access_rules":[
+      "$isSirenaEnterable",
+      "^$StandardLogic, $yoshi, $skipintro, progression_vanilla",
+      "^$AdvancedLogic, $hover, progression_vanilla"
+    ],
     "children": [
       {
         "name": "Ocean",
@@ -4836,7 +4840,7 @@
             "name": "Blue Coin",
             "access_rules":[
               "$StandardLogic, $turbo, $splasher",
-              "^$HardLogic, $splasherturbo",
+              "^$HardLogic, $splasherturbo"
             ],
             "item_count": 1
           }
