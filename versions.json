@@ -1,6 +1,18 @@
 {
     "versions": [
         {
+            "package_version": "0.5.0",
+            "download_url": "https://github.com/LiterallyNoOne1/Sunshine_Pop/archive/refs/tags/v0.5.0.zip",
+            "sha256": "080756a3d2ddc18d54f0018b4fa087c0d6cfcddb7fbcc2b617a1fce03a4e321c",
+            "changelog": [
+                "Complete logic rework to align with SMS AP 0.6.x",
+                "Reworked logic difficulty setting to align with the ones added to the SMS AP",
+                "Added multiple other new settings, including OpenEpisodes, Nozzle Box Toggle, and a toggle for displaying one difficulty tier above as out-of-logic",
+                "Added locations and maps( with automap) for secret areas",
+                "Added a few leading locations to better display when/where you have checks available (corona mountain, noki bay under the waterfall)"
+            ]
+        },
+        {
             "package_version": "0.4.3",
             "download_url": "https://github.com/LiterallyNoOne1/Sunshine_Pop/archive/refs/tags/v0.4.3.zip",
             "sha256": "b84183d47a6a97252e5845ea441ba828bc78614fb7da6870e281dfbf96ac6e12",
