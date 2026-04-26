@@ -5439,8 +5439,7 @@
           {
             "name": "Blue Coin",
             "access_rules":[
-              "$StandardLogic, $spray",
-              "^$HardLogic, $hover",
+              "$StandardLogic, $splasher",
               "^$AdvancedLogic, $fluddless"
             ],
             "item_count": 1
@@ -5465,8 +5464,7 @@
           {
             "name": "Blue Coin",
             "access_rules":[
-              "$StandardLogic, $spray",
-              "^$HardLogic, $hover",
+              "$StandardLogic, $splasher",
               "^$AdvancedLogic, $fluddless"
             ],
             "item_count": 1
@@ -5491,8 +5489,7 @@
           {
             "name": "Blue Coin",
             "access_rules":[
-              "$StandardLogic, $spray",
-              "^$HardLogic, $hover",
+              "$StandardLogic, $splasher",
               "^$AdvancedLogic, $fluddless"
             ],
             "item_count": 1
@@ -5517,8 +5514,7 @@
           {
             "name": "Blue Coin",
             "access_rules":[
-              "$StandardLogic, $spray",
-              "^$HardLogic, $hover",
+              "$StandardLogic, $splasher",
               "^$AdvancedLogic, $fluddless"
             ],
             "item_count": 1
@@ -5543,8 +5539,7 @@
           {
             "name": "Blue Coin",
             "access_rules":[
-              "$StandardLogic, $spray",
-              "^$HardLogic, $hover",
+              "$StandardLogic, $splasher",
               "^$AdvancedLogic, $fluddless"
             ],
             "item_count": 1
@@ -5569,8 +5564,7 @@
           {
             "name": "Blue Coin",
             "access_rules":[
-              "$StandardLogic, $spray",
-              "^$HardLogic, $hover",
+              "$StandardLogic, $splasher",
               "^$AdvancedLogic, $fluddless"
             ],
             "item_count": 1
@@ -5595,8 +5589,7 @@
           {
             "name": "Blue Coin",
             "access_rules":[
-              "$StandardLogic, $spray",
-              "^$HardLogic, $hover",
+              "$StandardLogic, $splasher",
               "^$AdvancedLogic, $fluddless"
             ],
             "item_count": 1
@@ -5621,8 +5614,7 @@
           {
             "name": "Blue Coin",
             "access_rules":[
-              "$StandardLogic, $spray",
-              "^$HardLogic, $hover",
+              "$StandardLogic, $splasher",
               "^$AdvancedLogic, $fluddless"
             ],
             "item_count": 1
