@@ -13,7 +13,7 @@
                     ["progression", "OpenAllEpisodes", "LogicDisplay", "nozzlestart"],
                     ["coin_shines_enabled", "blues", "nozzle_box_enabled"],
                     ["coronashines", "boat_maximum", "OoLDisplay"],
-                    ["automap"]
+                    ["automap", "autoepisode"]
                 ]
             }
         ]

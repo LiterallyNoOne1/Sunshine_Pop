@@ -2540,7 +2540,7 @@
             "name": "Blue Coin",
             "access_rules":[
               "$StandardLogic, $splasher",
-              "$standardLogic, $yoshi, $Gelato6",
+              "$StandardLogic, $yoshi, $Gelato6",
               "^$HardLogic, $turbo"
             ],
             "item_count": 1
@@ -2665,7 +2665,7 @@
           {
             "name": "Blue Coin",
             "access_rules":[
-              "$StandardLogic, $spalsherturbo",
+              "$StandardLogic, $splasherturbo",
               "$StandardLogic, $yoshi, $Gelato6",
               "^$HardLogic, $fluddless"
             ],
@@ -3568,7 +3568,7 @@
           {
             "name": "Blue Coin",
             "access_rules":[
-              "$StandardLogic, @splasher",
+              "$StandardLogic, $splasher",
               "^$HardLogic, $turbo",
               "^$AdvancedLogic, $rocket"
             ],
@@ -5666,7 +5666,7 @@
           {
             "name": "Blue Coin",
             "access_rules":[
-              "$StandardLogic, @splasher",
+              "$StandardLogic, $splasher",
               "^$HardLogic, $turbo",
               "^$AdvancedLogic, $rocket"
             ],

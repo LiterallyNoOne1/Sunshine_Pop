@@ -131,6 +131,9 @@ function onClear(slot_data)
         cur_stage = "sms_map_"..TEAM_NUMBER.."_"..PLAYER_ID
         Archipelago:SetNotify({cur_stage})
         Archipelago:Get({cur_stage})
+        cur_episode = "sms_episode_"..TEAM_NUMBER.."_"..PLAYER_ID
+        Archipelago:SetNotify({cur_episode})
+        Archipelago:Get({cur_episode})
     end
 end
 
@@ -189,6 +192,9 @@ function onNotify(key, value, old_value)
 		if key == cur_stage then
             print("map: "..value)
         end
+        if key == cur_episode then
+            print("episode: "..value + 1)
+        end
 	end
 end
 
@@ -196,16 +202,26 @@ function onNotifyLaunch(key, value)
     if key == cur_stage then
             print("map: "..value)
     end
+    if key == cur_episode then
+    print("episode: "..value + 1)
+    end
 end
 
 
 function onMapChange(key, value, old)
     -- print("got  " .. key .. " = " .. tostring(value) .. " (was " .. tostring(old) .. ")")
     -- print(dump_table(MAP_MAPPING[tostring(value)]))
-    if has("automap_on") then
-    tabs = MAP_MAPPING[tostring(value)]
-    for i, tab in ipairs(tabs) do
-        Tracker:UiHint("ActivateTab", tab)
+    if key == cur_stage then
+        if has("automap_on") then
+            tabs = MAP_MAPPING[tostring(value)]
+            for i, tab in ipairs(tabs) do
+                Tracker:UiHint("ActivateTab", tab)
+            end
+        end
+    end
+    if key == cur_episode then
+        if has("autoEpisode_on") then
+            Tracker:FindObjectForCode("episode").CurrentStage = value + 1
         end
     end
 end
