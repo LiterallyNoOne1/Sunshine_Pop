@@ -37,6 +37,7 @@ function onClear(slot_data)
     SLOT_DATA = slot_data
     CUR_INDEX = -1
     -- reset locations
+    Tracker:FindObjectForCode("@Corona Mountain/Episode 1/Father and Son Shine!").AvailableChestCount = 1
     for _, v in pairs(LOCATION_MAPPING) do
         if v[1] then
             local obj = Tracker:FindObjectForCode(v[1])
