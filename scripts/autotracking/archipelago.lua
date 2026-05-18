@@ -134,6 +134,9 @@ function onClear(slot_data)
         cur_episode = "sms_episode_"..TEAM_NUMBER.."_"..PLAYER_ID
         Archipelago:SetNotify({cur_episode})
         Archipelago:Get({cur_episode})
+        cur_status = "_read_client_status_"..TEAM_NUMBER.."_"..PLAYER_ID
+        Archipelago:SetNotify({cur_status})
+        Archipelago:Get({cur_status})
     end
 end
 
@@ -187,50 +190,36 @@ function onLocation(location_id, location_name)
     end
 end
 
-function onNotify(key, value, old_value)
-	if value ~= old_value then
-		if key == cur_stage then
+function onNotify(key, value, old)
+    -- print("got  " .. key .. " = " .. tostring(value) .. " (was " .. tostring(old) .. ")")
+    -- print(dump_table(MAP_MAPPING[tostring(value)]))
+    if value ~= old then
+        if key == cur_stage then
             print("map: "..value)
+            if has("automap_on") then
+                tabs = MAP_MAPPING[tostring(value)]
+                for i, tab in ipairs(tabs) do
+                    Tracker:UiHint("ActivateTab", tab)
+                end
+            end
         end
         if key == cur_episode then
             print("episode: "..value + 1)
+            if has("autoEpisode_on") then
+                Tracker:FindObjectForCode("episode").CurrentStage = value + 1
+            end
         end
-	end
-end
-
-function onNotifyLaunch(key, value)
-    if key == cur_stage then
-            print("map: "..value)
-    end
-    if key == cur_episode then
-    print("episode: "..value + 1)
-    end
-end
-
-
-function onMapChange(key, value, old)
-    -- print("got  " .. key .. " = " .. tostring(value) .. " (was " .. tostring(old) .. ")")
-    -- print(dump_table(MAP_MAPPING[tostring(value)]))
-    if key == cur_stage then
-        if has("automap_on") then
-            tabs = MAP_MAPPING[tostring(value)]
-            for i, tab in ipairs(tabs) do
-                Tracker:UiHint("ActivateTab", tab)
+        if key == cur_status then
+            if value == Archipelago.ClientStatus.GOAL then
+                print("VICTORY")
+                Tracker:FindObjectForCode("@Corona Mountain/Episode 1/Father and Son Shine!").AvailableChestCount = 0
             end
         end
     end
-    if key == cur_episode then
-        if has("autoEpisode_on") then
-            Tracker:FindObjectForCode("episode").CurrentStage = value + 1
-        end
-    end
 end
-
 
 Archipelago:AddClearHandler("clear handler", onClear)
 Archipelago:AddItemHandler("item handler", onItem)
 Archipelago:AddLocationHandler("location handler", onLocation)
 Archipelago:AddSetReplyHandler("notify handler", onNotify)
-Archipelago:AddRetrievedHandler("notify launch handler", onNotifyLaunch)
-Archipelago:AddSetReplyHandler("map_key", onMapChange)
-Archipelago:AddRetrievedHandler("map_key", onMapChange)
+Archipelago:AddRetrievedHandler("retrieve handler", onNotify)
