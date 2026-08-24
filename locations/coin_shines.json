@@ -143,7 +143,7 @@
                 "children": [
                     {
                         "name": "Secret Shine",
-                        "access_rules": ["Pinna2"],
+                        "access_rules": ["$Pinna2"],
                         "sections": [
                             {
                                 "name": "Pinna 100 Coins",
