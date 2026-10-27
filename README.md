@@ -25,3 +25,5 @@ Check out the Sunshine Thread in AP server for more info
 
 None of this wouldve been possible without them and Huge Thanks to the APworld devs who made Sunshine AP possible <3
 
+# AI Disclosure
+no AI was used by me (Sparky5000) or, as far as im aware, any other contributors during the developement of this pack
